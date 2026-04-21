@@ -4,6 +4,11 @@ bin/
 out/
 *.class
 *.log
+.verify/
+networktables.json
+simgui.json
+simgui-*.json
+simgui*.json
 
 .classpath
 .project
@@ -11,3 +16,4 @@ out/
 
 .DS_Store
 Thumbs.db
+wiki-publish/
