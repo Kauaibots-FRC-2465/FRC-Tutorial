@@ -1,6 +1,7 @@
 # Lesson 01: Reading a Java Project
 
 Branch: `lesson-01-reading-a-java-project`
+Student Reading: [Student Lesson 01: Reading a Java Project](Student-Lesson-01-Reading-a-Java-Project)
 How to use this lesson: reading and discussion
 
 ## What This Lesson Is Really About
