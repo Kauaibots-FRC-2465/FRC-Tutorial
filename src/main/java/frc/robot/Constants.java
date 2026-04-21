@@ -14,6 +14,22 @@ package frc.robot;
  */
 public final class Constants {
   public static class OperatorConstants {
-    public static final int kDriverControllerPort = 0;
+    public static final int DRIVER_CONTROLLER_PORT = 0;
+  }
+
+  public static class DriveConstants {
+    public static final double MAX_FORWARD_COMMAND = 1.0;
+    public static final double MAX_TURN_COMMAND = 1.0;
+  }
+
+  public static class ArmConstants {
+    public static final double STOW_ANGLE_DEGREES = 12.0;
+    public static final double INTAKE_ANGLE_DEGREES = 72.0;
+    public static final double SPEAKER_ANGLE_DEGREES = 34.0;
+  }
+
+  public static class IntakeConstants {
+    public static final double INTAKE_PERCENT = 0.75;
+    public static final double OUTTAKE_PERCENT = -0.45;
   }
 }
