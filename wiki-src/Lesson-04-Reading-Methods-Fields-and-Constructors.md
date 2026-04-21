@@ -2,7 +2,7 @@
 
 ## Big Picture
 
-Classes become useful when students understand three different roles inside them. Fields store information. Methods do work with that information. Constructors create new objects so those fields and methods can actually be used. These ideas sound basic, but they form the backbone of object-oriented Java. If students are shaky here, later topics such as subsystems, commands, and providers will feel much harder than they need to.
+Classes become useful when students understand three different roles inside them. Fields store information. Methods do work with that information. Constructors create new objects so those fields and methods can actually be used. These ideas sound basic, but they form the backbone of object-oriented Java. If students are shaky here, later architecture topics will feel much harder than they need to.
 
 A class is a blueprint. An object is one actual instance made from that blueprint. If a class describes a shooter preset, then one object might represent a close-shot preset and another object might represent a far-shot preset. The class defines what all presets have in common. Each object stores its own data. This is one of the biggest shifts from tiny beginner programs to larger projects: instead of a single pile of variables, programs start organizing related data and behavior into objects.
 
@@ -57,7 +57,7 @@ This does not mean constructors should never receive other objects. They often d
 
 ## Why This Matters For FRC
 
-FRC code is full of objects: robot containers, subsystems, commands, telemetry helpers, fake IO classes, and more. Those objects need to be created in a predictable way. If students understand fields, methods, and constructors well, they can read how a subsystem stores hardware references, how a command receives providers, and how objects are assembled into a working robot project.
+FRC code is full of objects: central project classes, telemetry helpers, fake IO classes, utility classes, and more. Those objects need to be created in a predictable way. If students understand fields, methods, and constructors well, they can read how one object stores dependencies, how another receives live inputs, and how the project is assembled into a working system.
 
 This lesson also connects directly to design quality. When a class has clear fields, methods with understandable jobs, and a constructor that creates a valid object without surprising side effects, the code becomes easier to test and easier to change. Those are not advanced luxuries. They are practical habits that make team code more reliable.
 
