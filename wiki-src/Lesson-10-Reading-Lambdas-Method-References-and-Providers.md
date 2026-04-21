@@ -49,7 +49,7 @@ Another common mistake is hiding too much logic inside a lambda. Lambdas are hel
 
 ## Why This Matters For FRC
 
-WPILib uses suppliers and related interfaces often. Controller bindings, commands, triggers, and chooser-like patterns all benefit from values that can be asked for later rather than frozen too early. If students understand providers, they can read a lot of robot code that would otherwise feel mysterious.
+Later in the course, WPILib uses suppliers and related interfaces often. Controller input, live measurements, and other changing values all benefit from being asked for later rather than frozen too early. If students understand providers, they can read a lot of robot code that would otherwise feel mysterious.
 
 This lesson also supports the course's fake-IO architecture. Providers help separate logic from specific hardware classes. That makes code easier to simulate, test, and adapt. In other words, this lesson is not just about syntax. It is about designing code that stays flexible as the robot and the course grow.
 
