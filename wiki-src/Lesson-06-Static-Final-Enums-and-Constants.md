@@ -1,7 +1,7 @@
 # Lesson 06: Static, Final, Enums, and Constants
 
 Branch: `lesson-06-static-final-enums-and-constants`
-Student Reading: [Student Lesson 06: Static, Final, Enums, and Constants](Student-Lesson-06-Static-Final-Enums-and-Constants)
+Reading Page: [Lesson 06 Reading: Static, Final, Enums, and Constants](Lesson-06-Reading-Static-Final-Enums-and-Constants)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
