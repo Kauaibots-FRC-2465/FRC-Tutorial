@@ -10,6 +10,8 @@
 - Construction order: the order in which objects are created during program startup.
 - Initialize step: a separate setup method run after construction, often used when several objects need to exist before setup can finish.
 - Build: the process of checking the code and turning it into a runnable program.
+- Composite build: a Gradle setup where one project includes other local Gradle projects.
+- Dependency substitution: a Gradle rule that tells the build to use a local included project instead of a separately published library.
 - Test: a small automatic check that asks whether the code behaves the way you expect.
 - Simulation: running robot code on a computer while the computer pretends to be the robot.
 - WPILib: the main software library used in FRC robot programs.
@@ -29,6 +31,7 @@
 - Package: a way of grouping related Java classes.
 - Package statement: the line near the top of a Java file that says which package the class belongs to.
 - Package naming scheme: Java packages often use a reversed domain-name style such as `com.example.project` or `edu.wpi.first.wpilibj`. In many FRC projects, the template uses `frc.robot`.
+- Workspace file: a VS Code file such as `.code-workspace` that can open several folders together in one workspace.
 - Entry point: the place where a program starts running.
 - `static`: belongs to the class itself instead of one object instance.
 - `final`: cannot be reassigned after it has been set up.
