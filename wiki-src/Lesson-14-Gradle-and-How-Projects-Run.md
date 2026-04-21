@@ -13,11 +13,15 @@ Students do not need to become Gradle experts, but they do need a mental model o
 - Gradle: the build tool used by this project
 - build tool: software that compiles code, runs tests, and manages project setup
 - dependency: another library the project needs in order to work
+- composite build: a Gradle setup that includes other local Gradle projects
+- workspace file: a VS Code file that can open several folders together
 
 ## Goals
 
 - Understand what Gradle is doing when the project builds.
 - Read `build.gradle` without needing to master every line.
+- Recognize the basic pattern for pulling local library repositories into one robot project.
+- Understand that the VS Code workspace also has to include those folders.
 - Use the common project actions confidently through VS Code.
 
 ## Read First
@@ -29,6 +33,8 @@ Students do not need to become Gradle experts, but they do need a mental model o
 ## Focus Questions
 
 - Where do dependencies come from?
+- How can a robot project use local library repositories from nearby folders?
+- Why is editing `settings.gradle` not enough by itself if the team wants to work on those libraries in VS Code?
 - Which WPILib actions compile, test, and simulate the project?
 - Which errors are build-setup problems and which are Java problems?
 
