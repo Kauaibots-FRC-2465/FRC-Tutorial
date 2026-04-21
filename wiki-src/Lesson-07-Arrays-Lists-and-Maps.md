@@ -1,7 +1,7 @@
 # Lesson 07: Arrays, Lists, and Maps
 
 Branch: `lesson-07-arrays-lists-and-maps`
-Student Reading: [Student Lesson 07: Arrays, Lists, and Maps](Student-Lesson-07-Arrays-Lists-and-Maps)
+Reading Page: [Lesson 07 Reading: Arrays, Lists, and Maps](Lesson-07-Reading-Arrays-Lists-and-Maps)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
