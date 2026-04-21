@@ -35,7 +35,7 @@ Access control also helps readers know what to pay attention to. Public methods 
 
 ## Composition Over Inheritance
 
-Composition means a class is built by holding or using other objects. Instead of becoming a more specific kind of some parent class again and again, the class combines useful pieces. Students can think of composition as "has-a" design rather than "is-a" design. A robot container has subsystems. A subsystem has IO objects. A telemetry helper has publishers.
+Composition means a class is built by holding or using other objects. Instead of becoming a more specific kind of some parent class again and again, the class combines useful pieces. Students can think of composition as "has-a" design rather than "is-a" design. A main application class has helpers. An IO manager has adapters. A telemetry helper has publishers.
 
 This style is powerful because it keeps responsibilities clearer. A class can depend on the exact helpers it needs without becoming trapped in a deep inheritance chain. Deep inheritance can make code harder to follow because behavior becomes spread across many ancestor classes. Composition is often easier to test, easier to change, and easier to explain.
 
@@ -45,11 +45,11 @@ That does not mean inheritance is never useful. It means students should not ass
 
 Good class design often means exposing only the methods that outside code really needs. The inside of the class may store several fields and use several helper methods, but the outside world may need only two or three meaningful operations. This keeps the class easier to use correctly.
 
-Students should learn to ask, "What should outside code know about this class, and what should remain internal?" That question pushes them toward better APIs and more readable code. It also prepares them for subsystem design, where the boundary between internal hardware details and public robot actions matters a great deal.
+Students should learn to ask, "What should outside code know about this class, and what should remain internal?" That question pushes them toward better APIs and more readable code. It also prepares them for later robot-design lessons, where boundaries between internal details and public actions matter a great deal.
 
 ## Why This Matters For FRC
 
-FRC projects benefit from interfaces because the same higher-level robot logic may need to work with fake IO, simulation, and real hardware. They benefit from access control because subsystem internals should not be freely edited from everywhere. They benefit from composition because robots are naturally assembled from parts: commands use subsystems, subsystems use IO layers, and telemetry helpers use data sources.
+FRC projects benefit from interfaces because the same higher-level robot logic may need to work with fake IO, simulation, and real hardware. They benefit from access control because internal details should not be freely edited from everywhere. They benefit from composition because robots are naturally assembled from parts: higher-level logic uses IO layers, telemetry helpers, and data sources.
 
 This lesson therefore sits at the bridge between general Java design and practical robot architecture. Students who understand interfaces, access control, and composition will be better prepared to read why the course is structured the way it is later on.
 
