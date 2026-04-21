@@ -1,7 +1,7 @@
 # Lesson 21: Triggers, Scheduler, and Requirements
 
 Branch: `lesson-21-triggers-scheduler-and-requirements`
-Student Reading: [Student Lesson 21: Triggers, Scheduler, and Requirements](Student-Lesson-21-Triggers-Scheduler-and-Requirements)
+Reading Page: [Lesson 21 Reading: Triggers, Scheduler, and Requirements](Lesson-21-Reading-Triggers-Scheduler-and-Requirements)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About
