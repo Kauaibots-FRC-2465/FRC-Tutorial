@@ -7,6 +7,8 @@ public interface ArmIO {
 
   void update();
 
+  default void simulationPeriodic() {}
+
   Angle getTargetAngle();
 
   Angle getMeasuredAngle();

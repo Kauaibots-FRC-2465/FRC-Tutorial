@@ -7,6 +7,8 @@ public interface DriveIO {
 
   void update();
 
+  default void simulationPeriodic() {}
+
   double getForwardCommand();
 
   double getTurnCommand();

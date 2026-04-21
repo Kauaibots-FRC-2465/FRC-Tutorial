@@ -9,7 +9,9 @@ import frc.robot.controls.DashboardDriverControls;
 import frc.robot.controls.DriverControls;
 import frc.robot.controls.XboxDriverControls;
 import frc.robot.io.ArmIOFake;
+import frc.robot.io.ArmIOSim;
 import frc.robot.io.DriveIOFake;
+import frc.robot.io.DriveIOSim;
 import frc.robot.io.IntakeIOFake;
 import frc.robot.commands.DriveWithJoysticksCommand;
 import frc.robot.commands.IdleIntakeCommand;
@@ -27,8 +29,8 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 
 public class RobotContainer {
-  private final DriveSubsystem driveSubsystem = new DriveSubsystem(new DriveIOFake());
-  private final ArmSubsystem armSubsystem = new ArmSubsystem(new ArmIOFake());
+  private final DriveSubsystem driveSubsystem = new DriveSubsystem(createDriveIO());
+  private final ArmSubsystem armSubsystem = new ArmSubsystem(createArmIO());
   private final IntakeSubsystem intakeSubsystem = new IntakeSubsystem(new IntakeIOFake());
 
   private final CommandXboxController driverController =
@@ -49,6 +51,20 @@ public class RobotContainer {
       return new DashboardDriverControls();
     }
     return new XboxDriverControls(driverController);
+  }
+
+  private frc.robot.io.DriveIO createDriveIO() {
+    if (edu.wpi.first.wpilibj.RobotBase.isSimulation()) {
+      return new DriveIOSim();
+    }
+    return new DriveIOFake();
+  }
+
+  private frc.robot.io.ArmIO createArmIO() {
+    if (edu.wpi.first.wpilibj.RobotBase.isSimulation()) {
+      return new ArmIOSim();
+    }
+    return new ArmIOFake();
   }
 
   private void configureBindings() {
@@ -76,5 +92,11 @@ public class RobotContainer {
 
   public Command getAutonomousCommand() {
     return autoChooser.getSelected();
+  }
+
+  public void simulationPeriodic() {
+    driveSubsystem.simulationPeriodic();
+    armSubsystem.simulationPeriodic();
+    intakeSubsystem.simulationPeriodic();
   }
 }

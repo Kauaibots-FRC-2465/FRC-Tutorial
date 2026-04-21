@@ -53,4 +53,9 @@ public class DriveSubsystem extends SubsystemBase {
     SmartDashboard.putNumber("Drive/HeadingDegrees", io.getHeadingDegrees());
     SmartDashboard.putBoolean("Drive/IsMoving", isMoving());
   }
+
+  @Override
+  public void simulationPeriodic() {
+    io.simulationPeriodic();
+  }
 }

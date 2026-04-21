@@ -41,4 +41,9 @@ public class ArmSubsystem extends SubsystemBase {
     SmartDashboard.putNumber("Arm/MeasuredAngleDegrees", io.getMeasuredAngle().in(Degrees));
     SmartDashboard.putBoolean("Arm/AtTarget", isAtTargetAngle());
   }
+
+  @Override
+  public void simulationPeriodic() {
+    io.simulationPeriodic();
+  }
 }
