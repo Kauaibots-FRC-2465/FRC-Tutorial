@@ -1,6 +1,7 @@
 # Lesson 17: Robot Lifecycle and Telemetry
 
 Branch: `lesson-17-robot-lifecycle-and-telemetry`
+Student Reading: [Student Lesson 17: Robot Lifecycle and Telemetry](Student-Lesson-17-Robot-Lifecycle-and-Telemetry)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About

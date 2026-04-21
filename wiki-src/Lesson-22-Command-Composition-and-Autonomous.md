@@ -1,6 +1,7 @@
 # Lesson 22: Command Composition and Autonomous
 
 Branch: `lesson-22-command-composition-and-autonomous`
+Student Reading: [Student Lesson 22: Command Composition and Autonomous](Student-Lesson-22-Command-Composition-and-Autonomous)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About

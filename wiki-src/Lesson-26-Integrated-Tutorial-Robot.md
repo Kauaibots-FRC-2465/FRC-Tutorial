@@ -1,6 +1,7 @@
 # Lesson 26: Integrated Tutorial Robot
 
 Branch: `lesson-26-integrated-tutorial-robot`
+Student Reading: [Student Lesson 26: Integrated Tutorial Robot](Student-Lesson-26-Integrated-Tutorial-Robot)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
 
 ## What This Lesson Is Really About

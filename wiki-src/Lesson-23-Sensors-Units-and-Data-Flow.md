@@ -1,6 +1,7 @@
 # Lesson 23: Sensors, Units, and Data Flow
 
 Branch: `lesson-23-sensors-units-and-data-flow`
+Student Reading: [Student Lesson 23: Sensors, Units, and Data Flow](Student-Lesson-23-Sensors-Units-and-Data-Flow)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
 
 ## What This Lesson Is Really About

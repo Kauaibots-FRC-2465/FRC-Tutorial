@@ -1,6 +1,7 @@
 # Lesson 18: Fake IO and Hardware Boundaries
 
 Branch: `lesson-18-fake-io-and-hardware-boundaries`
+Student Reading: [Student Lesson 18: Fake IO and Hardware Boundaries](Student-Lesson-18-Fake-IO-and-Hardware-Boundaries)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About

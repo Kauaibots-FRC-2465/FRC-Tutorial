@@ -1,6 +1,7 @@
 # Lesson 16: Reading a Command-Based Project
 
 Branch: `lesson-16-reading-a-command-based-project`
+Student Reading: [Student Lesson 16: Reading a Command-Based Project](Student-Lesson-16-Reading-a-Command-Based-Project)
 How to use this lesson: read the code, then use the VS Code WPILib command palette and choose `Build Robot Code`
 
 ## What This Lesson Is Really About
