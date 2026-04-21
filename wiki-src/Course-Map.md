@@ -4,7 +4,7 @@
 
 These lessons teach how to open the project, move between lesson snapshots, and find the files that matter first.
 
-- `lesson-00-tooling-and-course-workflow`: open the repository, switch branches, and build the project from VS Code.
+- `lesson-00-tooling-and-course-workflow`: open the repository, switch branches with Source Control and Git Graph, and build the project from VS Code.
 - `lesson-01-reading-a-java-project`: learn how a Java project is laid out and where the robot program starts.
 
 ## Phase 1: Java Reading Foundations
@@ -29,7 +29,7 @@ These lessons teach the Java ideas students need in order to read real robot cod
 These lessons explain the tools that keep the project organized and runnable.
 
 - `lesson-14-gradle-and-how-projects-run`: what the build system does when you build, test, or simulate the project.
-- `lesson-15-git-for-working-programmers`: how to move between branches and save your own work safely.
+- `lesson-15-git-for-working-programmers`: how to move between branches and save your own work safely using Source Control and Git Graph.
 
 ## Phase 3: WPILib and Command-Based Design
 

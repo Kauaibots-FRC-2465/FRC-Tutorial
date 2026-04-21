@@ -4,12 +4,13 @@
 
 Git keeps a history of the code. In this course, each lesson lives on its own branch, which means its own saved version of the project.
 
-- `git branch`: list local branches
-- `git switch lesson-07-arrays-lists-and-maps`: move to a lesson branch
-- `git status`: see whether you changed any files
-- `git diff`: inspect what changed in files you edited
-- `git add <file>`: stage a file, which means marking it for the next commit
-- `git commit -m "Describe the change"`: save a commit, which is a recorded snapshot of your work
+Students should use the VS Code Source Control view in the activity bar and the Git Graph extension instead of typing Git commands in the terminal.
+
+- Source Control view: the place in VS Code where you see changed files, staged files, and the commit message box
+- Git Graph: the branch and history viewer used in this course
+- Branch picker: the VS Code control used to switch to a different lesson branch
+- Stage: mark a file for the next commit
+- Commit: save a snapshot of your work with a message
 
 ## VS Code and WPILib
 
@@ -23,7 +24,7 @@ Use VS Code and the WPILib extension instead of typing Gradle commands directly.
 
 ## Good Habits
 
-- Run `git status` before switching branches.
+- Look at the Source Control view before switching branches.
 - Read the first real error in the build output.
 - Fix one issue at a time.
 - Keep commits small enough that you can explain them.

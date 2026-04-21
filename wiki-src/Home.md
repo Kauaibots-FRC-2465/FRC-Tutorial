@@ -7,7 +7,7 @@ It is written for students who may be completely new to Java and new to robot co
 ## How To Use The Course
 
 1. Clone the repository. Cloning means making your own copy of the project on your computer.
-2. Switch to the branch for the lesson you want. That branch is the saved version of the code for that lesson.
+2. Open the VS Code Source Control view in the activity bar and use Git Graph or the branch picker to switch to the branch for the lesson you want. That branch is the saved version of the code for that lesson.
 3. Read the matching wiki page.
 4. Run the project with the steps listed on that page.
 5. Make small changes and check the result before moving on.
@@ -21,10 +21,11 @@ It is written for students who may be completely new to Java and new to robot co
 - Fake IO and simulation come before any real robot is required.
 - AI-assisted design comes near the end, after students can check code carefully and explain what it does.
 
-## Core Commands
+## Core Tools
 
-- `git switch <branch-name>`: move to a different lesson snapshot.
-- `git status`: see whether you changed any files.
+- Source Control view: the Git view in the VS Code activity bar.
+- Git Graph: the branch and history viewer used in this course.
+- Branch picker: the VS Code control that lets you switch to a different lesson branch.
 - `Ctrl+Shift+P`: open the VS Code command palette.
 - `WPILib: Open WPILib Command Palette`: open the list of WPILib actions in VS Code.
 - `Build Robot Code`: check whether the code can be turned into a program successfully.

@@ -1,6 +1,8 @@
 # Glossary: Java and FRC
 
 - Branch: a saved version of the project. In this course, each lesson uses its own branch.
+- Source Control view: the Git view in the VS Code activity bar.
+- Git Graph: a VS Code extension that shows branches, commits, and project history.
 - Build: the process of checking the code and turning it into a runnable program.
 - Test: a small automatic check that asks whether the code behaves the way you expect.
 - Simulation: running robot code on a computer while the computer pretends to be the robot.
