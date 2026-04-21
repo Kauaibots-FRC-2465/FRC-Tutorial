@@ -9,10 +9,11 @@ The course is written for students who are new to Java. It starts with the minim
 1. Clone the repository.
 2. Switch to the branch for the lesson you want.
 3. Open the project in VS Code with the WPILib extension installed.
-4. Run the lesson using one of the workflows introduced in lesson 0:
-   - `.\gradlew.bat test`
-   - `.\gradlew.bat simulateJava`
-   - VS Code: `WPILib: Simulate Robot Code`
+4. Run the lesson using the VS Code command palette workflows introduced in lesson 0:
+   - `WPILib: Open WPILib Command Palette`
+   - `Build Robot Code`
+   - `Test Robot Code`
+   - `Simulate Robot Code`
 
 ## Planned Lesson Branches
 
@@ -46,4 +47,4 @@ The course is written for students who are new to Java. It starts with the minim
 
 ## Expectations
 
-Most lessons are designed to run without a real robot. Early lessons use plain Java code and tests. Later lessons use fake inputs, dashboard output, and WPILib simulation. Hardware is optional.
+Most lessons are designed to run without a real robot. Early lessons use plain Java code and tests. Later lessons use fake inputs, dashboard output, and WPILib simulation. Hardware is optional. Student workflows should use VS Code and the WPILib command palette instead of typing Gradle commands in a terminal.
