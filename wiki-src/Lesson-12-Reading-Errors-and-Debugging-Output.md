@@ -1,7 +1,7 @@
 # Lesson 12: Reading Errors and Debugging Output
 
 Branch: `lesson-12-reading-errors-and-debugging-output`
-Student Reading: [Student Lesson 12: Reading Errors and Debugging Output](Student-Lesson-12-Reading-Errors-and-Debugging-Output)
+Reading Page: [Lesson 12 Reading: Errors and Debugging Output](Lesson-12-Reading-Material-Errors-and-Debugging-Output)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
