@@ -19,7 +19,7 @@ Understanding mutability is important because bugs often come from unexpected sh
 
 ## Mutable Objects
 
-A mutable object can update its internal state over time. This is very common and often necessary. A subsystem may need to track current readings. A data collector may need to store new samples. A command may update progress information while it runs. Mutability is not bad. It is simply powerful, and power has to be managed carefully.
+A mutable object can update its internal state over time. This is very common and often necessary. A stateful application object may need to track current readings. A data collector may need to store new samples. A long-running controller object may update progress information while it runs. Mutability is not bad. It is simply powerful, and power has to be managed carefully.
 
 The danger of mutable objects appears when change is shared too widely. If many parts of the code can update the same object, it can become hard to tell where a surprising value came from. Students should notice that mutability and access control are connected. If a mutable object exposes too much of itself, outside code may change it in ways the original class designer did not intend.
 
@@ -51,9 +51,9 @@ In robot code, this matters because some code runs repeatedly. If a loop creates
 
 ## Why This Matters For FRC
 
-Robot code naturally mixes mutable and immutable ideas. Configuration values, preset objects, and measurement snapshots may be good candidates for immutability. Live subsystem state, sensor updates, and command progress are often mutable. Students who understand the difference can design cleaner boundaries and predict bugs more accurately.
+Robot code naturally mixes mutable and immutable ideas. Configuration values, preset objects, and measurement snapshots may be good candidates for immutability. Live measurements, updates from the environment, and progress information are often mutable. Students who understand the difference can design cleaner boundaries and predict bugs more accurately.
 
-This lesson also prepares students for later architecture topics. Fake IO, telemetry, subsystems, and command behavior all depend on clear decisions about what should change, who should own that changing information, and how long particular objects should live.
+This lesson also prepares students for later architecture topics. Fake IO, telemetry, and the later FRC framework lessons all depend on clear decisions about what should change, who should own that changing information, and how long particular objects should live.
 
 ## Before You Move On
 
