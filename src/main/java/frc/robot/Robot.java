@@ -26,6 +26,12 @@ public class Robot extends TimedRobot {
    */
   public Robot() {
     robotContainer = new RobotContainer();
+    CommandScheduler.getInstance()
+        .onCommandInitialize(command -> System.out.println("Command init: " + command.getName()));
+    CommandScheduler.getInstance()
+        .onCommandInterrupt(command -> System.out.println("Command interrupt: " + command.getName()));
+    CommandScheduler.getInstance()
+        .onCommandFinish(command -> System.out.println("Command finish: " + command.getName()));
   }
 
   /**

@@ -11,6 +11,10 @@ public interface DriverControls {
 
   boolean speakerPositionRequested();
 
+  boolean armUpRequested();
+
+  boolean armDownRequested();
+
   boolean intakeInRequested();
 
   boolean intakeOutRequested();

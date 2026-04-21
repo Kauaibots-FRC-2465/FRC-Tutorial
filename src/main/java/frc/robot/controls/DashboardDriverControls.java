@@ -9,6 +9,8 @@ public class DashboardDriverControls implements DriverControls {
     SmartDashboard.setDefaultBoolean("Controls/Stow", false);
     SmartDashboard.setDefaultBoolean("Controls/IntakePosition", false);
     SmartDashboard.setDefaultBoolean("Controls/SpeakerPosition", false);
+    SmartDashboard.setDefaultBoolean("Controls/ArmUp", false);
+    SmartDashboard.setDefaultBoolean("Controls/ArmDown", false);
     SmartDashboard.setDefaultBoolean("Controls/IntakeIn", false);
     SmartDashboard.setDefaultBoolean("Controls/IntakeOut", false);
   }
@@ -36,6 +38,16 @@ public class DashboardDriverControls implements DriverControls {
   @Override
   public boolean speakerPositionRequested() {
     return SmartDashboard.getBoolean("Controls/SpeakerPosition", false);
+  }
+
+  @Override
+  public boolean armUpRequested() {
+    return SmartDashboard.getBoolean("Controls/ArmUp", false);
+  }
+
+  @Override
+  public boolean armDownRequested() {
+    return SmartDashboard.getBoolean("Controls/ArmDown", false);
   }
 
   @Override

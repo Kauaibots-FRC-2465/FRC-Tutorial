@@ -14,6 +14,7 @@ import frc.robot.io.IntakeIOFake;
 import frc.robot.commands.DriveWithJoysticksCommand;
 import frc.robot.commands.IdleIntakeCommand;
 import frc.robot.commands.MoveArmToAngleCommand;
+import frc.robot.commands.NudgeArmCommand;
 import frc.robot.commands.RunIntakeCommand;
 import frc.robot.commands.Autos;
 import frc.robot.subsystems.ArmSubsystem;
@@ -53,6 +54,8 @@ public class RobotContainer {
         .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.INTAKE_ANGLE_DEGREES));
     new Trigger(controls::speakerPositionRequested)
         .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.SPEAKER_ANGLE_DEGREES));
+    new Trigger(controls::armUpRequested).whileTrue(new NudgeArmCommand(armSubsystem, 1.0));
+    new Trigger(controls::armDownRequested).whileTrue(new NudgeArmCommand(armSubsystem, -1.0));
     new Trigger(controls::intakeInRequested).whileTrue(
         new RunIntakeCommand(intakeSubsystem, Constants.IntakeConstants.INTAKE_PERCENT));
     new Trigger(controls::intakeOutRequested).whileTrue(

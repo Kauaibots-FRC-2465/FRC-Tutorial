@@ -35,6 +35,16 @@ public class XboxDriverControls implements DriverControls {
   }
 
   @Override
+  public boolean armUpRequested() {
+    return controller.rightBumper().getAsBoolean();
+  }
+
+  @Override
+  public boolean armDownRequested() {
+    return controller.leftBumper().getAsBoolean();
+  }
+
+  @Override
   public boolean intakeInRequested() {
     return controller.rightTrigger().getAsBoolean();
   }

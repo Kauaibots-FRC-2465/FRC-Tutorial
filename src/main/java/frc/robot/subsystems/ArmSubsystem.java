@@ -15,6 +15,10 @@ public class ArmSubsystem extends SubsystemBase {
     io.setTargetAngleDegrees(targetAngleDegrees);
   }
 
+  public void nudgeTargetAngle(double deltaDegrees) {
+    io.setTargetAngleDegrees(io.getTargetAngleDegrees() + deltaDegrees);
+  }
+
   public double getTargetAngleDegrees() {
     return io.getTargetAngleDegrees();
   }
