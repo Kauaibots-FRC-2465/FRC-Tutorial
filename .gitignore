@@ -4,6 +4,11 @@ bin/
 out/
 *.class
 *.log
+.verify/
+networktables.json
+simgui.json
+simgui-*.json
+simgui*.json
 
 .classpath
 .project
