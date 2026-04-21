@@ -49,7 +49,7 @@ Another common mistake is using unclear names. A variable called `x` may be acce
 
 ## Why This Matters For FRC
 
-Robot programs are full of values: motor outputs, sensor readings, timing values, controller inputs, limits, tolerances, and flags that describe the robot's current situation. Before students can understand subsystems, commands, or simulation, they need to be comfortable with the idea that a program is constantly storing, updating, and comparing values.
+Robot programs are full of values: motor outputs, sensor readings, timing values, controller inputs, limits, tolerances, and flags that describe the robot's current situation. Before students can understand the later robot-architecture lessons, they need to be comfortable with the idea that a program is constantly storing, updating, and comparing values.
 
 Primitive types are especially common in robotics because the robot interacts with physical quantities. Speed, distance, angle, voltage, and timing all begin as values in code. If students can read variables and primitive types confidently, later lessons on sensor data, commands, and testing will feel much more natural.
 
