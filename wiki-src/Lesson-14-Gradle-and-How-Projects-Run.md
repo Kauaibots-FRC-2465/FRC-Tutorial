@@ -1,7 +1,7 @@
 # Lesson 14: Gradle and How Projects Run
 
 Branch: `lesson-14-gradle-and-how-projects-run`
-Student Reading: [Student Lesson 14: Gradle and How Projects Run](Student-Lesson-14-Gradle-and-How-Projects-Run)
+Reading Page: [Lesson 14 Reading: Gradle and How Projects Run](Lesson-14-Reading-Gradle-and-How-Projects-Run)
 How to use this lesson: use VS Code and the WPILib command palette
 
 ## What This Lesson Is Really About
