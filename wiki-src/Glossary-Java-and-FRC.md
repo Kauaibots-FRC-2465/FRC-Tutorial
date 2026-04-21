@@ -6,6 +6,8 @@
 - `.git`: the hidden folder where Git stores repository history and internal data.
 - `.gitignore`: the file that tells Git which files should not be tracked.
 - Directory structure: the way files and folders are arranged inside a project.
+- Construction order: the order in which objects are created during program startup.
+- Initialize step: a separate setup method run after construction, often used when several objects need to exist before setup can finish.
 - Build: the process of checking the code and turning it into a runnable program.
 - Test: a small automatic check that asks whether the code behaves the way you expect.
 - Simulation: running robot code on a computer while the computer pretends to be the robot.
