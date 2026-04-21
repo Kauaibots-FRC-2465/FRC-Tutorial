@@ -16,7 +16,7 @@ AI can help draft code, but it is not allowed to replace understanding. This les
 ## Goals
 
 - Use AI for a small, reviewable feature instead of an unbounded code dump.
-- Review generated design choices against the existing architecture.
+- Review generated design choices against the existing project structure.
 - Keep ownership, naming, and testability intact while adding a feature.
 
 ## Read First
