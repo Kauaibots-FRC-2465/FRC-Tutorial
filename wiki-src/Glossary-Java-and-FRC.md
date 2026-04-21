@@ -6,6 +6,7 @@
 - `.git`: the hidden folder where Git stores repository history and internal data.
 - `.gitignore`: the file that tells Git which files should not be tracked.
 - Directory structure: the way files and folders are arranged inside a project.
+- JAR file: a packaged Java output file. `JAR` stands for `Java ARchive`.
 - Construction order: the order in which objects are created during program startup.
 - Initialize step: a separate setup method run after construction, often used when several objects need to exist before setup can finish.
 - Build: the process of checking the code and turning it into a runnable program.
@@ -26,6 +27,8 @@
 - Method: a named block of code that does work.
 - Field: a variable stored inside an object or class.
 - Package: a way of grouping related Java classes.
+- Package statement: the line near the top of a Java file that says which package the class belongs to.
+- Package naming scheme: Java packages often use a reversed domain-name style such as `com.example.project` or `edu.wpi.first.wpilibj`. In many FRC projects, the template uses `frc.robot`.
 - Entry point: the place where a program starts running.
 - `static`: belongs to the class itself instead of one object instance.
 - `final`: cannot be reassigned after it has been set up.
