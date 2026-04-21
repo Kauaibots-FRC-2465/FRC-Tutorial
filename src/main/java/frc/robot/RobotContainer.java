@@ -24,6 +24,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.ArmSubsystem;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.telemetry.RobotStatusPublisher;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
@@ -37,6 +38,8 @@ public class RobotContainer {
       new CommandXboxController(OperatorConstants.DRIVER_CONTROLLER_PORT);
   private final DriverControls controls = createDriverControls();
   private final SendableChooser<Command> autoChooser = new SendableChooser<>();
+  private final RobotStatusPublisher statusPublisher =
+      new RobotStatusPublisher(driveSubsystem, armSubsystem, intakeSubsystem);
 
   public RobotContainer() {
     driveSubsystem.setDefaultCommand(
@@ -92,6 +95,10 @@ public class RobotContainer {
 
   public Command getAutonomousCommand() {
     return autoChooser.getSelected();
+  }
+
+  public void robotPeriodic() {
+    statusPublisher.publish();
   }
 
   public void simulationPeriodic() {

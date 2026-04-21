@@ -44,6 +44,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotPeriodic() {
     SmartDashboard.putString("Robot/Mode", currentMode);
+    robotContainer.robotPeriodic();
     CommandScheduler.getInstance().run();
   }
 
