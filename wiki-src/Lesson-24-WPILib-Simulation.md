@@ -1,7 +1,7 @@
 # Lesson 24: WPILib Simulation
 
 Branch: `lesson-24-wpilib-simulation`
-Student Reading: [Student Lesson 24: WPILib Simulation](Student-Lesson-24-WPILib-Simulation)
+Reading Page: [Lesson 24 Reading: WPILib Simulation](Lesson-24-Reading-WPILib-Simulation)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About
