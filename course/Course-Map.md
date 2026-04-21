@@ -5,7 +5,7 @@
 These lessons teach how to open the project, move between lesson snapshots, and find the files that matter first.
 
 - `lesson-00-tooling-and-course-workflow`: open the repository, switch branches with Source Control and Git Graph, and build the project from VS Code.
-- `lesson-01-reading-a-java-project`: learn how a Java project is laid out and where the robot program starts.
+- `lesson-01-reading-a-java-project`: learn what classes, methods, variables, and packages are, then use those ideas to understand how a Java project is laid out and where the program starts.
 
 ## Phase 1: Java Reading Foundations
 
