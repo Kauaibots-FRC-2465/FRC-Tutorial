@@ -1,6 +1,7 @@
 # Lesson 25: AI-Assisted Feature Design
 
 Branch: `lesson-25-ai-assisted-feature-design`
+Student Reading: [Student Lesson 25: AI-Assisted Feature Design](Student-Lesson-25-AI-Assisted-Feature-Design)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
 
 ## What This Lesson Is Really About
