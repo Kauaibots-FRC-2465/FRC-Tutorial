@@ -41,34 +41,38 @@ It is written for students who may be completely new to Java and new to robot co
 - `Git-and-Gradle-Cheat-Sheet`
 - `AI-Prompting-and-Code-Review-Checklist`
 
-Each `Lesson-*` page is the short course guide page. Each lesson also has a matching `Lesson-XX-Reading-*` page with the longer student reading for that lesson. The reading pages are named to sit beside the lesson guide pages in the wiki menu.
+Each lesson has two pages in the wiki menu:
+- `Lesson Overview XX - ...`: the short guide page for that lesson
+- `Lesson Reading XX - ...`: the longer student reading page for that lesson
+
+The names are arranged so the overview page appears before the reading page in the menu.
 
 ## Lessons
 
-- `Lesson-00-Tooling-and-Course-Workflow`
-- `Lesson-01-Reading-a-Java-Project`
-- `Lesson-02-Values-Variables-and-Primitives`
-- `Lesson-03-Reference-Types-Wrappers-and-Strings`
-- `Lesson-04-Methods-Fields-and-Constructors`
-- `Lesson-05-Control-Flow-and-Tracing`
-- `Lesson-06-Static-Final-Enums-and-Constants`
-- `Lesson-07-Arrays-Lists-and-Maps`
-- `Lesson-08-Generics-and-Common-Type-Patterns`
-- `Lesson-09-Interfaces-Access-and-Composition`
-- `Lesson-10-Lambdas-Method-References-and-Providers`
-- `Lesson-11-Mutability-Immutability-and-Object-Lifetime`
-- `Lesson-12-Reading-Errors-and-Debugging-Output`
-- `Lesson-13-Unit-Tests-and-Test-Doubles`
-- `Lesson-14-Gradle-and-How-Projects-Run`
-- `Lesson-15-Git-for-Working-Programmers`
-- `Lesson-16-Reading-a-Command-Based-Project`
-- `Lesson-17-Robot-Lifecycle-and-Telemetry`
-- `Lesson-18-Fake-IO-and-Hardware-Boundaries`
-- `Lesson-19-Subsystems-and-State-Ownership`
-- `Lesson-20-Commands-Basics-and-Default-Behavior`
-- `Lesson-21-Triggers-Scheduler-and-Requirements`
-- `Lesson-22-Command-Composition-and-Autonomous`
-- `Lesson-23-Sensors-Units-and-Data-Flow`
-- `Lesson-24-WPILib-Simulation`
-- `Lesson-25-AI-Assisted-Feature-Design`
-- `Lesson-26-Integrated-Tutorial-Robot`
+- Lesson Overview 00 - Tooling and Course Workflow
+- Lesson Overview 01 - Java Program Structure and Project Layout
+- Lesson Overview 02 - Values, Variables, and Primitives
+- Lesson Overview 03 - Reference Types, Wrappers, and Strings
+- Lesson Overview 04 - Methods, Fields, and Constructors
+- Lesson Overview 05 - Control Flow and Tracing
+- Lesson Overview 06 - Static, Final, Enums, and Constants
+- Lesson Overview 07 - Arrays, Lists, and Maps
+- Lesson Overview 08 - Generics and Common Type Patterns
+- Lesson Overview 09 - Interfaces, Access, and Composition
+- Lesson Overview 10 - Lambdas, Method References, and Providers
+- Lesson Overview 11 - Mutability, Immutability, and Object Lifetime
+- Lesson Overview 12 - Errors and Debugging Output
+- Lesson Overview 13 - Unit Tests and Test Doubles
+- Lesson Overview 14 - Gradle and How Projects Run
+- Lesson Overview 15 - Git for Working Programmers
+- Lesson Overview 16 - Command-Based Project Structure
+- Lesson Overview 17 - Robot Lifecycle and Telemetry
+- Lesson Overview 18 - Fake IO and Hardware Boundaries
+- Lesson Overview 19 - Subsystems and State Ownership
+- Lesson Overview 20 - Commands, Basics, and Default Behavior
+- Lesson Overview 21 - Triggers, Scheduler, and Requirements
+- Lesson Overview 22 - Command Composition and Autonomous
+- Lesson Overview 23 - Sensors, Units, and Data Flow
+- Lesson Overview 24 - WPILib Simulation
+- Lesson Overview 25 - AI-Assisted Feature Design
+- Lesson Overview 26 - Integrated Tutorial Robot
