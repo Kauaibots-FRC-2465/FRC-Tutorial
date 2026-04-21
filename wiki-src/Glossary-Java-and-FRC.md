@@ -3,10 +3,17 @@
 - Branch: a saved version of the project. In this course, each lesson uses its own branch.
 - Source Control view: the Git view in the VS Code activity bar.
 - Git Graph: a VS Code extension that shows branches, commits, and project history.
+- `.git`: the hidden folder where Git stores repository history and internal data.
+- `.gitignore`: the file that tells Git which files should not be tracked.
+- Directory structure: the way files and folders are arranged inside a project.
 - Build: the process of checking the code and turning it into a runnable program.
 - Test: a small automatic check that asks whether the code behaves the way you expect.
 - Simulation: running robot code on a computer while the computer pretends to be the robot.
 - WPILib: the main software library used in FRC robot programs.
+- `snake_case`: lowercase words separated by underscores, such as `drive_speed`.
+- `UPPER_SNAKE_CASE`: uppercase words separated by underscores, such as `MAX_SPEED`.
+- `camelCase`: starts lowercase and capitalizes later words, such as `driveSpeed`.
+- `PascalCase`: capitalizes every word, such as `DriveSubsystem`.
 - Primitive type: a built-in value type such as `int`, `double`, or `boolean`.
 - Reference type: a variable that points to an object, such as `String`, `List`, or a custom class.
 - Wrapper type: an object form of a primitive, such as `Integer` or `Double`.
