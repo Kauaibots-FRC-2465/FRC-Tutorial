@@ -13,6 +13,8 @@ When students first open a Java project, everything can look equally important. 
 - source file: a file that contains Java code you wrote for the program
 - build file: a file that tells the build system how to create the program
 - entry point: the place where the program starts running
+- package statement: the line near the top of a Java file that says which package the class belongs to
+- JAR file: a packaged Java build output; `JAR` stands for `Java ARchive`
 - subsystem: code that owns one robot capability, such as driving or moving an arm
 - command: a named robot action, such as driving with joysticks or running an intake
 
@@ -20,6 +22,8 @@ When students first open a Java project, everything can look equally important. 
 
 - Find where execution starts.
 - Separate build files from source files.
+- Connect Java package names to folder paths.
+- Know what a JAR file is when it appears in the `build/` folder.
 - Recognize the role of `Robot`, `RobotContainer`, commands, and subsystems.
 
 ## Read First
@@ -45,7 +49,7 @@ A directory structure is the way folders and files are arranged in a project. In
 - `src/main/java/` holds the main robot code.
 - `src/test/java/` holds test code.
 - `build.gradle` and `settings.gradle` tell the build system how to build the project.
-- `build/` holds generated output and should usually be left alone.
+- `build/` holds generated output such as reports and JAR files and should usually be left alone.
 
 ## Focus Questions
 
