@@ -1,7 +1,7 @@
 # Lesson 04: Methods, Fields, and Constructors
 
 Branch: `lesson-04-methods-fields-and-constructors`
-Student Reading: [Student Lesson 04: Methods, Fields, and Constructors](Student-Lesson-04-Methods-Fields-and-Constructors)
+Reading Page: [Lesson 04 Reading: Methods, Fields, and Constructors](Lesson-04-Reading-Methods-Fields-and-Constructors)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
