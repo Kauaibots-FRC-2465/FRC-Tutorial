@@ -1,7 +1,7 @@
 # Lesson 08: Generics and Common Type Patterns
 
 Branch: `lesson-08-generics-and-common-type-patterns`
-Student Reading: [Student Lesson 08: Generics and Common Type Patterns](Student-Lesson-08-Generics-and-Common-Type-Patterns)
+Reading Page: [Lesson 08 Reading: Generics and Common Type Patterns](Lesson-08-Reading-Generics-and-Common-Type-Patterns)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About

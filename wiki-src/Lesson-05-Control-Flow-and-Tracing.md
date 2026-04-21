@@ -1,7 +1,7 @@
 # Lesson 05: Control Flow and Tracing
 
 Branch: `lesson-05-control-flow-and-tracing`
-Student Reading: [Student Lesson 05: Control Flow and Tracing](Student-Lesson-05-Control-Flow-and-Tracing)
+Reading Page: [Lesson 05 Reading: Control Flow and Tracing](Lesson-05-Reading-Control-Flow-and-Tracing)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About

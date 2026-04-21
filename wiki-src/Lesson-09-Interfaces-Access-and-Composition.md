@@ -1,7 +1,7 @@
 # Lesson 09: Interfaces, Access, and Composition
 
 Branch: `lesson-09-interfaces-access-and-composition`
-Student Reading: [Student Lesson 09: Interfaces, Access, and Composition](Student-Lesson-09-Interfaces-Access-and-Composition)
+Reading Page: [Lesson 09 Reading: Interfaces, Access, and Composition](Lesson-09-Reading-Interfaces-Access-and-Composition)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
