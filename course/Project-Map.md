@@ -34,9 +34,19 @@ A directory structure is the way files and folders are arranged inside a project
 - `build/`: generated output such as compiled code, jars, reports, and temporary files. Students normally do not edit anything here.
 - `vendordeps/`: vendor library description files. These are used when a project depends on hardware libraries from motor controller or sensor vendors.
 
+## Packages, Folders, and JAR Files
+
+Java files usually begin with a package statement. A package is the named group the class belongs to. The package name is usually tied to the folder path under the source root. For example, if a file says `package frc.robot.subsystems;`, it should normally live in `src/main/java/frc/robot/subsystems/`.
+
+In many Java projects, package names follow a reverse-domain naming pattern such as `com.example.project`, `org.teamname.robot`, or `edu.wpi.first.wpilibj`. That convention helps projects avoid name collisions. In many FRC projects, students will also see the shorter template package `frc.robot`, which is common in WPILib starter projects.
+
+A JAR file is one common kind of Java build output. `JAR` stands for `Java ARchive`. A JAR file is a packaged bundle that can hold compiled Java classes and other resources. Students usually do not edit a JAR by hand. It is something the build process creates from the source files.
+
 ## What To Notice
 
 - Java code is organized into folders and packages so related files stay together.
+- Package names and folder paths usually line up with each other under `src/main/java/` or `src/test/java/`.
+- The `build/` folder often contains JAR files, which are packaged Java build outputs.
 - `Main` starts the robot class.
 - `Robot` manages the robot's major modes such as disabled, autonomous, teleop, test, and simulation.
 - `RobotContainer` is where command-based robots usually define the overall setup of the project.
