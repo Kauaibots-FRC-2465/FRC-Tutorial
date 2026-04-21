@@ -12,6 +12,7 @@ import frc.robot.io.ArmIOFake;
 import frc.robot.io.DriveIOFake;
 import frc.robot.io.IntakeIOFake;
 import frc.robot.commands.DriveWithJoysticksCommand;
+import frc.robot.commands.IdleIntakeCommand;
 import frc.robot.commands.MoveArmToAngleCommand;
 import frc.robot.commands.RunIntakeCommand;
 import frc.robot.commands.Autos;
@@ -34,6 +35,7 @@ public class RobotContainer {
   public RobotContainer() {
     driveSubsystem.setDefaultCommand(
         new DriveWithJoysticksCommand(driveSubsystem, controls::forward, controls::turn));
+    intakeSubsystem.setDefaultCommand(new IdleIntakeCommand(intakeSubsystem));
     configureBindings();
   }
 
