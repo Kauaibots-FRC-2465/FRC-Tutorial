@@ -9,7 +9,7 @@ Each lesson lives on its own Git branch. In this course, a branch is just a save
 ## How To Use This Repository
 
 1. Clone the repository. Cloning means making your own copy of the project on your computer.
-2. Switch to the branch for the lesson you want. That branch is the saved version of the code for that lesson.
+2. Open the VS Code Source Control view in the activity bar and use Git Graph or the branch picker to switch to the branch for the lesson you want. That branch is the saved version of the code for that lesson.
 3. Open the project in VS Code with the WPILib extension installed. The WPILib extension adds the robot-specific actions used in this course.
 4. Run the lesson using the VS Code command palette steps introduced in lesson 0:
    - `WPILib: Open WPILib Command Palette`: opens the list of WPILib actions in VS Code.
@@ -51,4 +51,4 @@ Each lesson lives on its own Git branch. In this course, a branch is just a save
 
 Most lessons are designed to run without a real robot. Early lessons use plain Java code and tests. A test is a small program that checks whether code behaves the way you expect. Later lessons use fake inputs, dashboard output, and WPILib simulation. Fake inputs are stand-ins for things like controllers or sensors. Dashboard output means values shown on screen so humans can see what the program is doing. Simulation means the computer pretends to be the robot well enough for you to study behavior.
 
-Students should use VS Code and the WPILib command palette instead of typing Gradle commands in a terminal.
+Students should use VS Code for both Git and WPILib tasks. Use the Source Control view and Git Graph for Git work, and use the WPILib command palette instead of typing Gradle commands in a terminal.
