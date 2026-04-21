@@ -6,7 +6,7 @@ How to use this lesson: reading and discussion
 
 ## What This Lesson Is Really About
 
-When students first open a Java project, everything can look equally important. It is not. This lesson is about learning where execution starts, which files are about building the project, and which files contain the robot's behavior.
+When students first open a Java project, everything can look equally important. It is not. This lesson is about learning where execution starts, which files are about building the project, and which files contain the program itself. You do not need to understand the FRC framework files yet. Those are taught later in the course.
 
 ## New Words
 
@@ -15,8 +15,8 @@ When students first open a Java project, everything can look equally important. 
 - entry point: the place where the program starts running
 - package statement: the line near the top of a Java file that says which package the class belongs to
 - JAR file: a packaged Java build output; `JAR` stands for `Java ARchive`
-- subsystem: code that owns one robot capability, such as driving or moving an arm
-- command: a named robot action, such as driving with joysticks or running an intake
+- main class: one of the central Java files the project starts from or relies on
+- support file: a file that helps the project build, configure itself, or organize code
 
 ## Goals
 
@@ -24,19 +24,19 @@ When students first open a Java project, everything can look equally important. 
 - Separate build files from source files.
 - Connect Java package names to folder paths.
 - Know what a JAR file is when it appears in the `build/` folder.
-- Recognize the role of `Robot`, `RobotContainer`, commands, and subsystems.
+- Recognize the difference between entry-point files and later framework files.
 
 ## Read First
 
 - `course/Project-Map.md`
 - `src/main/java/frc/robot/Main.java`
 - `src/main/java/frc/robot/Robot.java`
-- `src/main/java/frc/robot/RobotContainer.java`
+- `src/main/java/frc/robot/RobotContainer.java` just to notice its location and name; its role is taught later
 
 ## Name Styles You Will See
 
-- `camelCase`: starts lowercase and then uses capital letters for later words, such as `robotContainer` or `maxSpeed`. In Java, methods and variables usually use this style.
-- `PascalCase`: capitalizes every word, such as `RobotContainer` or `DriveSubsystem`. In Java, class names usually use this style.
+- `camelCase`: starts lowercase and then uses capital letters for later words, such as `robotConfig` or `maxSpeed`. In Java, methods and variables usually use this style.
+- `PascalCase`: capitalizes every word, such as `RobotConfig` or `ShooterPreset`. In Java, class names usually use this style.
 - `UPPER_SNAKE_CASE`: all capital letters with underscores, such as `DRIVER_PORT`. In Java, constants often use this style.
 - `snake_case`: lowercase letters with underscores, such as `drive_speed`. This is common in some other languages and data files, but not the normal style for Java variables or classes.
 
@@ -55,8 +55,8 @@ A directory structure is the way folders and files are arranged in a project. In
 
 - Which file starts the program?
 - Which files are there to build the project, and which files contain Java code?
-- Which file seems to connect the main robot pieces together?
+- Which files seem central right now, and which files can wait until the later FRC lessons?
 
 ## Success Check
 
-- You can explain where the robot program starts and where to look for its main parts.
+- You can explain where the program starts, where the build files live, and which deeper framework files you can safely postpone for later.
