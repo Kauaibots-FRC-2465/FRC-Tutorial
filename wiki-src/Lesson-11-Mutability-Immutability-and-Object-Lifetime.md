@@ -1,7 +1,7 @@
 # Lesson 11: Mutability, Immutability, and Object Lifetime
 
 Branch: `lesson-11-mutability-immutability-and-object-lifetime`
-Student Reading: [Student Lesson 11: Mutability, Immutability, and Object Lifetime](Student-Lesson-11-Mutability-Immutability-and-Object-Lifetime)
+Reading Page: [Lesson 11 Reading: Mutability, Immutability, and Object Lifetime](Lesson-11-Reading-Mutability-Immutability-and-Object-Lifetime)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
