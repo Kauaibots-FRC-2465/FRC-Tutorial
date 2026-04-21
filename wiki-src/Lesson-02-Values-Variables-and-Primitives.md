@@ -1,7 +1,7 @@
 # Lesson 02: Values, Variables, and Primitives
 
 Branch: `lesson-02-values-variables-and-primitives`
-Student Reading: [Student Lesson 02: Values, Variables, and Primitives](Student-Lesson-02-Values-Variables-and-Primitives)
+Reading Page: [Lesson 02 Reading: Values, Variables, and Primitives](Lesson-02-Reading-Values-Variables-and-Primitives)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
