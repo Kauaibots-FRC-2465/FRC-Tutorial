@@ -1,13 +1,14 @@
 # Gradle Cheat Sheet
 
-Gradle is the build tool for this project. You do not need to understand everything about Gradle at the start, but you do need to know how to use the common tasks.
+Gradle is the build tool for this project. Students should normally use the VS Code command palette through the WPILib extension, not type Gradle commands directly in a terminal.
 
-## Commands Students Should Know
+## VS Code Actions Students Should Know
 
-- `.\gradlew.bat compileJava`: compile the main Java code.
-- `.\gradlew.bat test`: run the unit tests.
-- `.\gradlew.bat simulateJava`: run the robot in desktop simulation.
-- `.\gradlew.bat build`: run the normal build pipeline.
+- Open the command palette with `Ctrl+Shift+P`.
+- Run `WPILib: Open WPILib Command Palette`.
+- Choose `Build Robot Code` to compile the project.
+- Choose `Test Robot Code` to run the unit tests.
+- Choose `Simulate Robot Code` to run the robot in desktop simulation.
 
 ## What Gradle Is Doing
 
@@ -21,4 +22,4 @@ Gradle is the build tool for this project. You do not need to understand everyth
 
 - Read the first error, not just the last line.
 - Fix one problem at a time.
-- If a command worked yesterday and fails today, check which files changed.
+- If a build worked yesterday and fails today, check which files changed.
