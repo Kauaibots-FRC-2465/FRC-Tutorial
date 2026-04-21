@@ -1,6 +1,7 @@
 # Lesson 15: Git for Working Programmers
 
 Branch: `lesson-15-git-for-working-programmers`
+Student Reading: [Student Lesson 15: Git for Working Programmers](Student-Lesson-15-Git-for-Working-Programmers)
 How to use this lesson: use the VS Code Source Control view and Git Graph
 
 ## What This Lesson Is Really About

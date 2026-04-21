@@ -39,6 +39,8 @@ It is written for students who may be completely new to Java and new to robot co
 - `Git-and-Gradle-Cheat-Sheet`
 - `AI-Prompting-and-Code-Review-Checklist`
 
+Each `Lesson-*` page is the short course guide page. Each lesson now also has a matching `Student-Lesson-*` page with the concept explanations students should read for that lesson.
+
 ## Lessons
 
 - `Lesson-00-Tooling-and-Course-Workflow`
