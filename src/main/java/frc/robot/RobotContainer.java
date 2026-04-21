@@ -53,11 +53,11 @@ public class RobotContainer {
 
   private void configureBindings() {
     new Trigger(controls::stowRequested)
-        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.STOW_ANGLE_DEGREES));
+        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.STOW_ANGLE));
     new Trigger(controls::intakePositionRequested)
-        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.INTAKE_ANGLE_DEGREES));
+        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.INTAKE_ANGLE));
     new Trigger(controls::speakerPositionRequested)
-        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.SPEAKER_ANGLE_DEGREES));
+        .onTrue(new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.SPEAKER_ANGLE));
     new Trigger(controls::armUpRequested).whileTrue(new NudgeArmCommand(armSubsystem, 1.0));
     new Trigger(controls::armDownRequested).whileTrue(new NudgeArmCommand(armSubsystem, -1.0));
     new Trigger(controls::intakeInRequested).whileTrue(

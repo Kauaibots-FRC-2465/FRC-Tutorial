@@ -1,37 +1,40 @@
 package frc.robot.io;
 
+import static edu.wpi.first.units.Units.Degrees;
+
+import edu.wpi.first.units.measure.Angle;
 import frc.robot.Constants;
 
 public class ArmIOFake implements ArmIO {
-  private double targetAngleDegrees = Constants.ArmConstants.STOW_ANGLE_DEGREES;
-  private double measuredAngleDegrees = Constants.ArmConstants.STOW_ANGLE_DEGREES;
+  private Angle targetAngle = Constants.ArmConstants.STOW_ANGLE;
+  private Angle measuredAngle = Constants.ArmConstants.STOW_ANGLE;
 
   @Override
-  public void setTargetAngleDegrees(double targetAngleDegrees) {
-    this.targetAngleDegrees = targetAngleDegrees;
+  public void setTargetAngle(Angle targetAngle) {
+    this.targetAngle = targetAngle;
   }
 
   @Override
   public void update() {
-    double error = targetAngleDegrees - measuredAngleDegrees;
+    double error = targetAngle.in(Degrees) - measuredAngle.in(Degrees);
     double maxStep = 2.5;
 
     if (Math.abs(error) <= maxStep) {
-      measuredAngleDegrees = targetAngleDegrees;
+      measuredAngle = targetAngle;
     } else if (error > 0.0) {
-      measuredAngleDegrees += maxStep;
+      measuredAngle = Degrees.of(measuredAngle.in(Degrees) + maxStep);
     } else {
-      measuredAngleDegrees -= maxStep;
+      measuredAngle = Degrees.of(measuredAngle.in(Degrees) - maxStep);
     }
   }
 
   @Override
-  public double getTargetAngleDegrees() {
-    return targetAngleDegrees;
+  public Angle getTargetAngle() {
+    return targetAngle;
   }
 
   @Override
-  public double getMeasuredAngleDegrees() {
-    return measuredAngleDegrees;
+  public Angle getMeasuredAngle() {
+    return measuredAngle;
   }
 }

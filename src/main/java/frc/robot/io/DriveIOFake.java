@@ -1,5 +1,9 @@
 package frc.robot.io;
 
+import static edu.wpi.first.units.Units.Meters;
+
+import edu.wpi.first.units.measure.Distance;
+
 public class DriveIOFake implements DriveIO {
   private double forwardCommand;
   private double turnCommand;
@@ -29,8 +33,8 @@ public class DriveIOFake implements DriveIO {
   }
 
   @Override
-  public double getEstimatedXMeters() {
-    return estimatedXMeters;
+  public Distance getEstimatedX() {
+    return Meters.of(estimatedXMeters);
   }
 
   @Override

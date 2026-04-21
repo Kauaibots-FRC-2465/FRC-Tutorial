@@ -1,11 +1,13 @@
 package frc.robot.io;
 
+import edu.wpi.first.units.measure.Angle;
+
 public interface ArmIO {
-  void setTargetAngleDegrees(double targetAngleDegrees);
+  void setTargetAngle(Angle targetAngle);
 
   void update();
 
-  double getTargetAngleDegrees();
+  Angle getTargetAngle();
 
-  double getMeasuredAngleDegrees();
+  Angle getMeasuredAngle();
 }

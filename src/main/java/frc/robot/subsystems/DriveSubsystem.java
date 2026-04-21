@@ -1,7 +1,11 @@
 package frc.robot.subsystems;
 
+import static edu.wpi.first.units.Units.Feet;
+import static edu.wpi.first.units.Units.Meters;
+
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import edu.wpi.first.units.measure.Distance;
 import frc.robot.io.DriveIO;
 
 public class DriveSubsystem extends SubsystemBase {
@@ -27,8 +31,8 @@ public class DriveSubsystem extends SubsystemBase {
     return io.getTurnCommand();
   }
 
-  public double getEstimatedXMeters() {
-    return io.getEstimatedXMeters();
+  public Distance getEstimatedX() {
+    return io.getEstimatedX();
   }
 
   public double getHeadingDegrees() {
@@ -44,7 +48,8 @@ public class DriveSubsystem extends SubsystemBase {
     io.update();
     SmartDashboard.putNumber("Drive/ForwardCommand", io.getForwardCommand());
     SmartDashboard.putNumber("Drive/TurnCommand", io.getTurnCommand());
-    SmartDashboard.putNumber("Drive/EstimatedXMeters", io.getEstimatedXMeters());
+    SmartDashboard.putNumber("Drive/EstimatedXMeters", io.getEstimatedX().in(Meters));
+    SmartDashboard.putNumber("Drive/EstimatedXFeet", io.getEstimatedX().in(Feet));
     SmartDashboard.putNumber("Drive/HeadingDegrees", io.getHeadingDegrees());
     SmartDashboard.putBoolean("Drive/IsMoving", isMoving());
   }

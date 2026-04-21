@@ -4,6 +4,8 @@
 
 package frc.robot.commands;
 
+import static edu.wpi.first.units.Units.Meters;
+
 import frc.robot.Constants;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.ArmSubsystem;
@@ -15,12 +17,16 @@ public final class Autos {
   public static Command scoreAndLeaveAuto(
       DriveSubsystem driveSubsystem, ArmSubsystem armSubsystem, IntakeSubsystem intakeSubsystem) {
     return Commands.sequence(
-        new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.SPEAKER_ANGLE_DEGREES),
+        new MoveArmToAngleCommand(armSubsystem, Constants.ArmConstants.SPEAKER_ANGLE),
         Commands.waitSeconds(0.5),
         Commands.deadline(
             Commands.waitSeconds(1.0),
             new RunIntakeCommand(intakeSubsystem, Constants.IntakeConstants.OUTTAKE_PERCENT)),
-        Commands.run(() -> driveSubsystem.drive(0.6, 0.0), driveSubsystem).withTimeout(2.0),
+        Commands.run(() -> driveSubsystem.drive(0.6, 0.0), driveSubsystem)
+            .until(
+                () ->
+                    driveSubsystem.getEstimatedX().in(Meters)
+                        >= Constants.AutoConstants.LEAVE_DISTANCE.in(Meters)),
         Commands.runOnce(driveSubsystem::stop, driveSubsystem));
   }
 

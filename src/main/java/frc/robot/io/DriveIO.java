@@ -1,5 +1,7 @@
 package frc.robot.io;
 
+import edu.wpi.first.units.measure.Distance;
+
 public interface DriveIO {
   void setOpenLoop(double forward, double turn);
 
@@ -9,7 +11,7 @@ public interface DriveIO {
 
   double getTurnCommand();
 
-  double getEstimatedXMeters();
+  Distance getEstimatedX();
 
   double getHeadingDegrees();
 }
