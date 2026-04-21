@@ -17,6 +17,8 @@ It is written for students who may be completely new to Java and new to robot co
 - Tools and workflow come first, so students can actually open and run the lessons.
 - Java reading foundations come next, so the syntax is less mysterious.
 - Gradle and Git basics are taught before team work depends on them.
+- Lessons `00` through `15` are the Java-first block of the course.
+- The first intentionally FRC-specific framework lesson is `Lesson-16`.
 - WPILib and command-based robot structure come after students can already read Java. Command-based is a common WPILib project style built around subsystems and commands.
 - Fake IO and simulation come before any real robot is required.
 - AI-assisted design comes near the end, after students can check code carefully and explain what it does.
