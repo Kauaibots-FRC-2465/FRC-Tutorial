@@ -20,7 +20,7 @@ Each lesson lives on its own Git branch. In this course, a branch is just a save
 ## Planned Lesson Branches
 
 - `lesson-00-tooling-and-course-workflow`
-- `lesson-01-reading-a-java-project`
+- `lesson-01-reading-a-java-project`: classes, methods, variables, packages, and the overall layout of a Java project
 - `lesson-02-values-variables-and-primitives`
 - `lesson-03-reference-types-wrappers-and-strings`
 - `lesson-04-methods-fields-and-constructors`
