@@ -1,7 +1,7 @@
 # Lesson 06: Static, Final, Enums, and Constants
 
 Branch: `lesson-06-static-final-enums-and-constants`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

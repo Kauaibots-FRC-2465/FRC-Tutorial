@@ -1,7 +1,7 @@
 # Lesson 13: Unit Tests and Test Doubles
 
 Branch: `lesson-13-unit-tests-and-test-doubles`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

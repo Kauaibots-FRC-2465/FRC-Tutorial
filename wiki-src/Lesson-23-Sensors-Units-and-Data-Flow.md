@@ -1,7 +1,7 @@
 # Lesson 23: Sensors, Units, and Data Flow
 
 Branch: `lesson-23-sensors-units-and-data-flow`
-Run mode: `.\gradlew.bat test` and `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
 
 ## Goals
 

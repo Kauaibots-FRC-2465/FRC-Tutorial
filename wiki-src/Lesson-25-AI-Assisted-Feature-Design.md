@@ -1,7 +1,7 @@
 # Lesson 25: AI-Assisted Feature Design
 
 Branch: `lesson-25-ai-assisted-feature-design`
-Run mode: `.\gradlew.bat test` and `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
 
 ## Goals
 

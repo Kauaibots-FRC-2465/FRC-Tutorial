@@ -1,7 +1,7 @@
 # Lesson 19: Subsystems and State Ownership
 
 Branch: `lesson-19-subsystems-and-state-ownership`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

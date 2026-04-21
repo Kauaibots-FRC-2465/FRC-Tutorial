@@ -1,7 +1,7 @@
 # Lesson 17: Robot Lifecycle and Telemetry
 
 Branch: `lesson-17-robot-lifecycle-and-telemetry`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

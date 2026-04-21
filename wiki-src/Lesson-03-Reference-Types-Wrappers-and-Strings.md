@@ -1,7 +1,7 @@
 # Lesson 03: Reference Types, Wrappers, and Strings
 
 Branch: `lesson-03-reference-types-wrappers-and-strings`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

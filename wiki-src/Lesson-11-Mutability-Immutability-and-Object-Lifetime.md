@@ -1,7 +1,7 @@
 # Lesson 11: Mutability, Immutability, and Object Lifetime
 
 Branch: `lesson-11-mutability-immutability-and-object-lifetime`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

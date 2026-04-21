@@ -1,7 +1,7 @@
 # Lesson 05: Control Flow and Tracing
 
 Branch: `lesson-05-control-flow-and-tracing`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

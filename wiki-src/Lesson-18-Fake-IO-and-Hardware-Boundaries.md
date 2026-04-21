@@ -1,7 +1,7 @@
 # Lesson 18: Fake IO and Hardware Boundaries
 
 Branch: `lesson-18-fake-io-and-hardware-boundaries`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

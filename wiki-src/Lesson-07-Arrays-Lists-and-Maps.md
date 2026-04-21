@@ -1,7 +1,7 @@
 # Lesson 07: Arrays, Lists, and Maps
 
 Branch: `lesson-07-arrays-lists-and-maps`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

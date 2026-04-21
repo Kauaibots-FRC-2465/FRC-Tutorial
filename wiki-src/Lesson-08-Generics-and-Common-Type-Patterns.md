@@ -1,7 +1,7 @@
 # Lesson 08: Generics and Common Type Patterns
 
 Branch: `lesson-08-generics-and-common-type-patterns`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

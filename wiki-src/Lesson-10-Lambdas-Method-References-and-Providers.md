@@ -1,7 +1,7 @@
 # Lesson 10: Lambdas, Method References, and Providers
 
 Branch: `lesson-10-lambdas-method-references-and-providers`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

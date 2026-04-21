@@ -1,7 +1,7 @@
 # Lesson 09: Interfaces, Access, and Composition
 
 Branch: `lesson-09-interfaces-access-and-composition`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

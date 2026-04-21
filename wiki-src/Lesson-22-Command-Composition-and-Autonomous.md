@@ -1,7 +1,7 @@
 # Lesson 22: Command Composition and Autonomous
 
 Branch: `lesson-22-command-composition-and-autonomous`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

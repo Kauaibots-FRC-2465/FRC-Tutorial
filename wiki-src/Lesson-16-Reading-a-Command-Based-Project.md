@@ -1,7 +1,7 @@
 # Lesson 16: Reading a Command-Based Project
 
 Branch: `lesson-16-reading-a-command-based-project`
-Run mode: reading and `.\gradlew.bat compileJava`
+Run mode: reading and VS Code WPILib command palette with `Build Robot Code`
 
 ## Goals
 

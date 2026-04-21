@@ -1,7 +1,7 @@
 # Lesson 04: Methods, Fields, and Constructors
 
 Branch: `lesson-04-methods-fields-and-constructors`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

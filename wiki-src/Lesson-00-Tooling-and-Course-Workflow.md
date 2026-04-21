@@ -1,7 +1,7 @@
 # Lesson 00: Tooling and Course Workflow
 
 Branch: `lesson-00-tooling-and-course-workflow`
-Run mode: VS Code, console, Gradle
+Run mode: VS Code and WPILib command palette
 
 ## Goals
 
@@ -19,7 +19,7 @@ Run mode: VS Code, console, Gradle
 ## Do In Class
 
 - Clone the repository.
-- Run `.\gradlew.bat compileJava`.
+- Open `WPILib: Open WPILib Command Palette` and choose `Build Robot Code`.
 - Run `git branch` and `git switch`.
 - Explain what `main` means in this repository.
 

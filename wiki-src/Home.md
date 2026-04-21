@@ -23,9 +23,11 @@ This wiki supports a branch-based course for learning how to read, test, and mod
 
 - `git switch <branch-name>`
 - `git status`
-- `.\gradlew.bat test`
-- `.\gradlew.bat compileJava`
-- `.\gradlew.bat simulateJava`
+- `Ctrl+Shift+P`
+- `WPILib: Open WPILib Command Palette`
+- `Build Robot Code`
+- `Test Robot Code`
+- `Simulate Robot Code`
 
 ## Main Reference Pages
 

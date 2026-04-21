@@ -1,7 +1,7 @@
 # Lesson 12: Reading Errors and Debugging Output
 
 Branch: `lesson-12-reading-errors-and-debugging-output`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

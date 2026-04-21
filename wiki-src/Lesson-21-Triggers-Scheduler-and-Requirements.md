@@ -1,7 +1,7 @@
 # Lesson 21: Triggers, Scheduler, and Requirements
 
 Branch: `lesson-21-triggers-scheduler-and-requirements`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

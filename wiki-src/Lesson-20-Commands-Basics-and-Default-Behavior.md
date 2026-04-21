@@ -1,7 +1,7 @@
 # Lesson 20: Commands Basics and Default Behavior
 
 Branch: `lesson-20-commands-basics-and-default-behavior`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 

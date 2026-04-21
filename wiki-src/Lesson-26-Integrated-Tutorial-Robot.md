@@ -1,7 +1,7 @@
 # Lesson 26: Integrated Tutorial Robot
 
 Branch: `lesson-26-integrated-tutorial-robot`
-Run mode: `.\gradlew.bat test` and `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
 
 ## Goals
 

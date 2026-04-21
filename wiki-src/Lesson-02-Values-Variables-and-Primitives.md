@@ -1,7 +1,7 @@
 # Lesson 02: Values, Variables, and Primitives
 
 Branch: `lesson-02-values-variables-and-primitives`
-Run mode: `.\gradlew.bat test`
+Run mode: VS Code WPILib command palette with `Test Robot Code`
 
 ## Goals
 

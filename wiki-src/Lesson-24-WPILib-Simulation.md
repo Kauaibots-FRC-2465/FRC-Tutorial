@@ -1,7 +1,7 @@
 # Lesson 24: WPILib Simulation
 
 Branch: `lesson-24-wpilib-simulation`
-Run mode: `.\gradlew.bat simulateJava`
+Run mode: VS Code WPILib command palette with `Simulate Robot Code`
 
 ## Goals
 
