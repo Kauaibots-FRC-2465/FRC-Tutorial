@@ -12,7 +12,9 @@ In this course, students are reading an FRC Java project. That means the project
 
 - directory structure: the planned layout of folders and files in a project
 - package: a named group of related Java classes
+- package statement: the line near the top of a Java file that says which package the class belongs to
 - import: a way for one Java file to use a class from another package
+- JAR file: a packaged Java output file that can hold compiled classes and other resources
 - source code: the files programmers write to define program behavior
 - generated file: a file created by a tool rather than written by hand
 - entry point: the place where program execution begins
@@ -21,9 +23,19 @@ In this course, students are reading an FRC Java project. That means the project
 
 In Java, classes are commonly grouped into packages. A package name tells you where a class fits in the larger project. For example, classes that work together in one area are often placed in the same package. That helps students answer questions like "Which files belong together?" and "Which code is probably related?" In many Java projects, one class lives in one file, and the file name matches the class name. That pattern makes it easier to find code quickly.
 
+Students should also learn that Java packages usually follow a naming convention. In many Java libraries and business projects, the package name starts with a reversed internet domain, such as `com.example.project`, `org.teamname.robot`, or `edu.wpi.first.wpilibj`. The reason is simple: domain names are usually unique, so reversing them gives projects a naming system that is less likely to collide with someone else's code. Students do not need to memorize domain ownership rules in detail, but they should understand the pattern when they see it.
+
+In FRC, students will often see shorter package names too. The default WPILib project template commonly uses `frc.robot`, which is simpler than a full reverse-domain package name but still follows the same general idea of grouping related code under a package path. A team could choose something longer, such as `com.kauaibots.frc.robot`, but many FRC examples stay with `frc.robot` because it is easy to read and matches the template structure students see early on.
+
 Imports connect those packages. If one file needs to use a class from another package, it usually imports that class. Students should think of imports as part of a file's vocabulary. The import list tells you which outside ideas this file depends on. If a file imports many robot hardware classes, it probably talks to hardware. If it imports testing libraries, it is probably a test file. Imports are often a very fast way to guess a file's purpose before reading the body.
 
 Students should also understand that the project tree is a communication tool. A folder name like `src/main/java` tells you, "This is real program code." A folder like `src/test/java` says, "This is test code." A folder like `build` usually contains generated output. Once students learn these patterns, they stop treating every file as equally important and start reading with better focus.
+
+## Packages and Folders
+
+One important Java rule is that package structure and directory structure are closely connected. If a file says `package frc.robot.subsystems;`, Java expects that file to live in folders that match that package path under the source root. In other words, the file would normally be inside `src/main/java/frc/robot/subsystems/`. Each word in the package name becomes another folder level.
+
+This is why package names are not just labels. They help determine where files belong in the project tree. Students should get used to reading the package statement near the top of a file and connecting it to the folders around that file. This makes navigation much easier. If a class is in package `frc.robot.commands`, the student already has a strong guess about where that file lives.
 
 ## Important Folders and Files in This Course
 
@@ -34,6 +46,8 @@ The `src` folder contains source code. Inside it, `src/main/java` holds the prog
 The `gradle` folder and files like `build.gradle` or `settings.gradle` belong to the build system. They help define how the project is compiled, tested, and assembled. Students do not need deep Gradle knowledge yet, but they should recognize that these files control project setup rather than robot behavior. The `vendordeps` folder stores JSON files that describe outside robotics libraries. In FRC, vendor libraries are common because teams often use hardware that comes with its own software package.
 
 The `build` folder usually contains generated output. Students should not treat it like source code. It is produced by the tools and can often be recreated. That difference between source files and generated files is important. If a student edits a generated file, they may be changing something that will be overwritten the next time the project builds.
+
+One kind of generated output students may see there is a `.jar` file. `JAR` stands for `Java ARchive`. A JAR file is a package file that can hold compiled Java classes and other resources such as configuration files. Students can think of it as a bundled Java output. They do not usually edit a JAR directly. It is something the build system creates from the source code and resources.
 
 ## Naming Conventions and Case Styles
 
@@ -56,6 +70,8 @@ Build season also moves quickly. Students often need to answer practical questio
 ## Before You Move On
 
 - You should know what a directory structure, package, and import are.
+- You should understand that package names often follow a reverse-domain naming style and that package names usually match folder structure under the source root.
+- You should know that a JAR file is a Java ARchive, which is a packaged Java build output.
 - You should understand the purpose of `.git`, `.gitignore`, `src`, `build`, `gradle`, and `vendordeps`.
 - You should be able to explain the normal uses of `camelCase`, `PascalCase`, `UPPER_SNAKE_CASE`, and `snake_case`.
 - You should know how to begin reading a Java project from the outside in.
