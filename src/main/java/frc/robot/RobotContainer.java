@@ -17,6 +17,8 @@ import frc.robot.commands.MoveArmToAngleCommand;
 import frc.robot.commands.NudgeArmCommand;
 import frc.robot.commands.RunIntakeCommand;
 import frc.robot.commands.Autos;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.robot.subsystems.ArmSubsystem;
 import frc.robot.subsystems.DriveSubsystem;
 import frc.robot.subsystems.IntakeSubsystem;
@@ -32,11 +34,13 @@ public class RobotContainer {
   private final CommandXboxController driverController =
       new CommandXboxController(OperatorConstants.DRIVER_CONTROLLER_PORT);
   private final DriverControls controls = createDriverControls();
+  private final SendableChooser<Command> autoChooser = new SendableChooser<>();
 
   public RobotContainer() {
     driveSubsystem.setDefaultCommand(
         new DriveWithJoysticksCommand(driveSubsystem, controls::forward, controls::turn));
     intakeSubsystem.setDefaultCommand(new IdleIntakeCommand(intakeSubsystem));
+    configureAutonomous();
     configureBindings();
   }
 
@@ -62,7 +66,15 @@ public class RobotContainer {
         new RunIntakeCommand(intakeSubsystem, Constants.IntakeConstants.OUTTAKE_PERCENT));
   }
 
+  private void configureAutonomous() {
+    autoChooser.setDefaultOption(
+        "Score and Leave",
+        Autos.scoreAndLeaveAuto(driveSubsystem, armSubsystem, intakeSubsystem));
+    autoChooser.addOption("Leave Only", Autos.leaveOnlyAuto(driveSubsystem));
+    SmartDashboard.putData("Autonomous/Chooser", autoChooser);
+  }
+
   public Command getAutonomousCommand() {
-    return Autos.exampleAuto(armSubsystem);
+    return autoChooser.getSelected();
   }
 }
