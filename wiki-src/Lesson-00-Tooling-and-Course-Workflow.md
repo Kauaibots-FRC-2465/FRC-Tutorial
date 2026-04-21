@@ -1,7 +1,7 @@
 # Lesson 00: Tooling and Course Workflow
 
 Branch: `lesson-00-tooling-and-course-workflow`
-Student Reading: [Student Lesson 00: Tooling and Course Workflow](Student-Lesson-00-Tooling-and-Course-Workflow)
+Reading Page: [Lesson 00 Reading: Tooling and Course Workflow](Lesson-00-Reading-Tooling-and-Course-Workflow)
 How to use this lesson: use VS Code and the WPILib command palette
 
 ## What This Lesson Is Really About
