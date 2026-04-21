@@ -27,10 +27,15 @@ public class IntakeSubsystem extends SubsystemBase {
     return io.hasNote();
   }
 
+  public boolean isRunning() {
+    return Math.abs(io.getRollerPercent()) > 0.05;
+  }
+
   @Override
   public void periodic() {
     io.update();
     SmartDashboard.putNumber("Intake/RollerPercent", io.getRollerPercent());
     SmartDashboard.putBoolean("Intake/HasNote", io.hasNote());
+    SmartDashboard.putBoolean("Intake/IsRunning", isRunning());
   }
 }

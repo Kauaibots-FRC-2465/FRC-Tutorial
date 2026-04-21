@@ -23,10 +23,15 @@ public class ArmSubsystem extends SubsystemBase {
     return io.getMeasuredAngleDegrees();
   }
 
+  public boolean isAtTargetAngle() {
+    return Math.abs(io.getTargetAngleDegrees() - io.getMeasuredAngleDegrees()) <= 1.0;
+  }
+
   @Override
   public void periodic() {
     io.update();
     SmartDashboard.putNumber("Arm/TargetAngleDegrees", io.getTargetAngleDegrees());
     SmartDashboard.putNumber("Arm/MeasuredAngleDegrees", io.getMeasuredAngleDegrees());
+    SmartDashboard.putBoolean("Arm/AtTarget", isAtTargetAngle());
   }
 }

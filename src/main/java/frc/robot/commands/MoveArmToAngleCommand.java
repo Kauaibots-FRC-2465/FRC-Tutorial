@@ -20,6 +20,6 @@ public class MoveArmToAngleCommand extends Command {
 
   @Override
   public boolean isFinished() {
-    return true;
+    return armSubsystem.isAtTargetAngle();
   }
 }

@@ -35,6 +35,10 @@ public class DriveSubsystem extends SubsystemBase {
     return io.getHeadingDegrees();
   }
 
+  public boolean isMoving() {
+    return Math.abs(io.getForwardCommand()) > 0.05 || Math.abs(io.getTurnCommand()) > 0.05;
+  }
+
   @Override
   public void periodic() {
     io.update();
@@ -42,5 +46,6 @@ public class DriveSubsystem extends SubsystemBase {
     SmartDashboard.putNumber("Drive/TurnCommand", io.getTurnCommand());
     SmartDashboard.putNumber("Drive/EstimatedXMeters", io.getEstimatedXMeters());
     SmartDashboard.putNumber("Drive/HeadingDegrees", io.getHeadingDegrees());
+    SmartDashboard.putBoolean("Drive/IsMoving", isMoving());
   }
 }
