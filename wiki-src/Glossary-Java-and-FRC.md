@@ -1,0 +1,25 @@
+# Glossary: Java and FRC
+
+- Primitive type: a built-in value type such as `int`, `double`, or `boolean`.
+- Reference type: a variable that points at an object, such as `String`, `List`, or a custom class.
+- Wrapper type: an object form of a primitive, such as `Integer` or `Double`.
+- Object: a value created from a class, with state and behavior.
+- Constructor: the code that runs when a new object is created.
+- Method: a named block of behavior on a class or object.
+- Field: state stored on an object or class.
+- `static`: belongs to the class instead of one object instance.
+- `final`: cannot be reassigned after initialization.
+- Enum: a closed set of named states.
+- Generic type: a class or method parameterized by a type, such as `List<String>`.
+- Provider: code that supplies a value on demand, often through `Supplier<T>` or similar interfaces.
+- Mutable: an object whose internal state can change.
+- Immutable: an object whose state does not change after construction.
+- Test double: a fake or stub used in place of real hardware or services during tests.
+- Subsystem: the owner of a robot mechanism or robot-facing capability.
+- Command: an action that tells one or more subsystems what to do.
+- Trigger: a condition that schedules commands when it changes.
+- Requirement: the subsystem ownership a command declares to the scheduler.
+- Scheduler: the WPILib system that runs commands and resolves conflicts.
+- Fake IO: a non-hardware implementation used to make robot code runnable on a laptop.
+- Simulation: a physics-based model of a mechanism or drivetrain.
+- Telemetry: data published so humans can observe what the robot is doing.
