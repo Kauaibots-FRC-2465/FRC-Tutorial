@@ -1,7 +1,7 @@
 # Lesson 03: Reference Types, Wrappers, and Strings
 
 Branch: `lesson-03-reference-types-wrappers-and-strings`
-Student Reading: [Student Lesson 03: Reference Types, Wrappers, and Strings](Student-Lesson-03-Reference-Types-Wrappers-and-Strings)
+Reading Page: [Lesson 03 Reading: Reference Types, Wrappers, and Strings](Lesson-03-Reading-Reference-Types-Wrappers-and-Strings)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
