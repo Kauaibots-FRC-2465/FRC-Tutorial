@@ -1,7 +1,7 @@
 # Lesson 20: Commands Basics and Default Behavior
 
 Branch: `lesson-20-commands-basics-and-default-behavior`
-Student Reading: [Student Lesson 20: Commands Basics and Default Behavior](Student-Lesson-20-Commands-Basics-and-Default-Behavior)
+Reading Page: [Lesson 20 Reading: Commands, Basics, and Default Behavior](Lesson-20-Reading-Commands-Basics-and-Default-Behavior)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About
