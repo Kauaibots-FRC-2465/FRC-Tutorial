@@ -1,7 +1,7 @@
 # Lesson 19: Subsystems and State Ownership
 
 Branch: `lesson-19-subsystems-and-state-ownership`
-Student Reading: [Student Lesson 19: Subsystems and State Ownership](Student-Lesson-19-Subsystems-and-State-Ownership)
+Reading Page: [Lesson 19 Reading: Subsystems and State Ownership](Lesson-19-Reading-Subsystems-and-State-Ownership)
 How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
 
 ## What This Lesson Is Really About
