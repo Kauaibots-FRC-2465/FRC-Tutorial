@@ -1,7 +1,7 @@
 # Lesson 13: Unit Tests and Test Doubles
 
 Branch: `lesson-13-unit-tests-and-test-doubles`
-Student Reading: [Student Lesson 13: Unit Tests and Test Doubles](Student-Lesson-13-Unit-Tests-and-Test-Doubles)
+Reading Page: [Lesson 13 Reading: Unit Tests and Test Doubles](Lesson-13-Reading-Unit-Tests-and-Test-Doubles)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
