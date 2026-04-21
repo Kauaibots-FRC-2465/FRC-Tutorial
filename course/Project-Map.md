@@ -7,8 +7,8 @@ The first job in a new codebase is not writing code right away. The first job is
 - `build.gradle`: a build file. It tells the build tool which libraries the project uses and how the project should be built.
 - `settings.gradle`: another build-system file with project settings.
 - `src/main/java/frc/robot/Main.java`: the Java entry point. This is the file that starts the robot program.
-- `src/main/java/frc/robot/Robot.java`: the class WPILib calls over and over while the robot is running in different modes.
-- `src/main/java/frc/robot/RobotContainer.java`: the place where many command-based projects connect subsystems, commands, and controller buttons. Command-based is a common WPILib project style used by many FRC teams.
+- `src/main/java/frc/robot/Robot.java`: a central framework file you will study later in the course.
+- `src/main/java/frc/robot/RobotContainer.java`: a major project file you will study later when the course reaches the FRC framework lessons.
 - `src/main/java/frc/robot/Constants.java`: shared values that are meant to stay the same unless you intentionally change them.
 
 ## Name Styles You Will See
@@ -16,7 +16,7 @@ The first job in a new codebase is not writing code right away. The first job is
 Java code uses a few common naming patterns. These patterns help you guess what kind of thing you are looking at before you fully understand the code.
 
 - `camelCase`: starts with a lowercase letter, then capitalizes later words, such as `robotContainer`, `driveSpeed`, or `getPose`. This is the normal style for variables, fields, parameters, and methods in Java.
-- `PascalCase`: capitalizes every word, such as `RobotContainer`, `DriveSubsystem`, or `ShooterPreset`. This is the normal style for class names, enum names, and other type names in Java.
+- `PascalCase`: capitalizes every word, such as `RobotConfig`, `RobotContainer`, or `ShooterPreset`. This is the normal style for class names, enum names, and other type names in Java.
 - `UPPER_SNAKE_CASE`: uses all capital letters with underscores, such as `DRIVER_PORT` or `MAX_SPEED_METERS_PER_SECOND`. This is the normal style for constants.
 - `snake_case`: uses lowercase letters with underscores, such as `drive_speed`. This is not the normal style for Java variables or classes, but students may still see it in file names from other tools, in JSON data, or in code from other languages.
 
@@ -37,7 +37,7 @@ A directory structure is the way files and folders are arranged inside a project
 
 ## Packages, Folders, and JAR Files
 
-Java files usually begin with a package statement. A package is the named group the class belongs to. The package name is usually tied to the folder path under the source root. For example, if a file says `package frc.robot.subsystems;`, it should normally live in `src/main/java/frc/robot/subsystems/`.
+Java files usually begin with a package statement. A package is the named group the class belongs to. The package name is usually tied to the folder path under the source root. For example, if a file says `package frc.robot.util;`, it should normally live in `src/main/java/frc/robot/util/`.
 
 In many Java projects, package names follow a reverse-domain naming pattern such as `com.example.project`, `org.teamname.robot`, or `edu.wpi.first.wpilibj`. That convention helps projects avoid name collisions. In many FRC projects, students will also see the shorter template package `frc.robot`, which is common in WPILib starter projects.
 
@@ -56,16 +56,14 @@ If the team works this way, there are really two setup jobs. First, Gradle has t
 - The `build/` folder often contains JAR files, which are packaged Java build outputs.
 - Some teams use a multi-folder VS Code workspace because one robot project may depend on several nearby repositories.
 - In that setup, Gradle files and the workspace file both matter.
-- `Main` starts the robot class.
-- `Robot` manages the robot's major modes such as disabled, autonomous, teleop, test, and simulation.
-- `RobotContainer` is where command-based robots usually define the overall setup of the project.
-- Commands describe actions, such as driving, moving an arm, or running an intake.
-- Subsystems own one robot capability, such as the drivetrain or the arm.
+- `Main` starts the program.
+- `Robot` is one of the central framework files, but you do not need to master its deeper role yet.
+- `RobotContainer` is another major project file whose deeper FRC role is introduced later in the course.
 
 ## Questions Students Should Be Able To Answer
 
 1. Which file starts the robot program?
-2. Which file contains methods that keep running while the robot is on?
-3. Where would you look for the code that connects controller buttons to robot actions?
-4. Where would you look for the code that tells the robot what to do by itself in autonomous mode?
+2. Which file looks like an important framework file even if you are not learning its full role yet?
+3. Which files are build files rather than Java source files?
+4. Which file names look important now, even if their deeper framework roles are still being saved for later lessons?
 5. Where would you put a constant such as a controller port number?
