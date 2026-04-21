@@ -43,7 +43,7 @@ It is also a reminder that generic code is often about describing relationships 
 
 ## Common Patterns Students Will See
 
-Collections are the most common place where beginners meet generics. Lists, maps, sets, and optional-like types all use them heavily. API methods may also return suppliers, commands, or other reusable structures that carry type information in angle brackets. Once students get comfortable reading those patterns, Java code becomes much less visually hostile.
+Collections are the most common place where beginners meet generics. Lists, maps, sets, and optional-like types all use them heavily. API methods may also return suppliers, callbacks, or other reusable structures that carry type information in angle brackets. Once students get comfortable reading those patterns, Java code becomes much less visually hostile.
 
 Students should look for two basic questions. First: what is the outer structure? Second: what kinds of items or values does it carry? That is usually enough to decode most beginner and intermediate generic syntax. The reader does not need to understand every advanced feature at once to read a lot of real code successfully.
 

@@ -2,7 +2,7 @@
 
 This repository is a step-by-step course for learning how to read, test, and modify FRC robot code in Java.
 
-It is written for students who may be completely new to Java. The course begins with the minimum tools needed to open the project and move between lessons. After that, it teaches how to read Java, then how to read and change WPILib robot code. WPILib is the main software library used in FRC robot programs.
+It is written for students who may be completely new to Java. The course begins with the minimum tools needed to open the project and move between lessons. After that, it teaches Java first and keeps the FRC-specific framework ideas later. Lessons `00` through `15` are the Java and project-tools block. Lesson `16` is the first lesson that intentionally teaches the WPILib robot structure. WPILib is the main software library used in FRC robot programs.
 
 Each lesson lives on its own Git branch. In this course, a branch is just a saved version of the project for one lesson. When you switch branches, you are switching to a different lesson snapshot.
 
@@ -52,3 +52,5 @@ Each lesson lives on its own Git branch. In this course, a branch is just a save
 Most lessons are designed to run without a real robot. Early lessons use plain Java code and tests. A test is a small program that checks whether code behaves the way you expect. Later lessons use fake inputs, dashboard output, and WPILib simulation. Fake inputs are stand-ins for things like controllers or sensors. Dashboard output means values shown on screen so humans can see what the program is doing. Simulation means the computer pretends to be the robot well enough for you to study behavior.
 
 Students should use VS Code for both Git and WPILib tasks. Use the Source Control view and Git Graph for Git work, and use the WPILib command palette instead of typing Gradle commands in a terminal.
+
+Students who already know Java can usually move more quickly through lessons `02` through `15`. The shared starting point for the FRC-specific part of the course is lesson `16`.

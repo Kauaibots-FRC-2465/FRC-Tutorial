@@ -21,7 +21,7 @@ Objects matter because most real Java programs are built out of them. Strings ar
 
 The most important distinction in this lesson is that a primitive value is not an object. A variable of type `int` stores a whole number. A variable of type `String` does not behave that way. It refers to a `String` object. The same general idea applies to most classes in Java. If students see a custom class name or many library class names, they should usually assume they are dealing with a reference type.
 
-This matters because objects can have methods and internal data. A string can answer questions about its length or produce new strings. A list can hold many items. A subsystem object can remember robot-related information and provide methods for interacting with it. Primitive values are simpler. They do not have the same object-style behavior.
+This matters because objects can have methods and internal data. A string can answer questions about its length or produce new strings. A list can hold many items. A larger application object can remember information and provide methods for interacting with it. Primitive values are simpler. They do not have the same object-style behavior.
 
 Reference types also introduce `null`. A primitive variable always contains some primitive value when properly initialized. A reference variable can also contain `null`, which means it is not currently pointing to an object. `null` is useful sometimes, but it can also cause runtime problems if code tries to use an object that is not there. Students should treat `null` carefully and always ask whether a reference is expected to have a real object before it is used.
 
@@ -49,9 +49,9 @@ This idea becomes very important later in Java. If students assume that "same ob
 
 ## Why This Matters For FRC
 
-FRC code is object-heavy. Subsystems, commands, timers, dashboard entries, and many library features are all objects. Students who understand only primitive types can read simple math, but not the structure of the robot program. Reference types are what allow larger pieces of behavior to exist as organized units.
+FRC code is object-heavy. Timers, dashboard entries, helper objects, and many library features are all objects. Students who understand only primitive types can read simple math, but not the structure of the robot program. Reference types are what allow larger pieces of behavior to exist as organized units.
 
-Strings and wrappers appear often too. Strings show up in telemetry, logging, chooser labels, and debugging. Wrappers appear in Java libraries and generic types. Understanding these object forms early makes later lessons on collections, generics, and command-based design much less surprising.
+Strings and wrappers appear often too. Strings show up in telemetry, logging, labels, and debugging. Wrappers appear in Java libraries and generic types. Understanding these object forms early makes later lessons on collections, generics, and the FRC framework much less surprising.
 
 ## Before You Move On
 
