@@ -1,7 +1,7 @@
 # Lesson 10: Lambdas, Method References, and Providers
 
 Branch: `lesson-10-lambdas-method-references-and-providers`
-Student Reading: [Student Lesson 10: Lambdas, Method References, and Providers](Student-Lesson-10-Lambdas-Method-References-and-Providers)
+Reading Page: [Lesson 10 Reading: Lambdas, Method References, and Providers](Lesson-10-Reading-Lambdas-Method-References-and-Providers)
 How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
 
 ## What This Lesson Is Really About
