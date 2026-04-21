@@ -31,6 +31,7 @@ A directory structure is the way files and folders are arranged inside a project
 - `src/main/deploy/`: files copied to the robot for runtime use, if the project needs them.
 - `gradle/`: support files used by the Gradle wrapper.
 - `gradlew.bat`: the Windows Gradle wrapper script. VS Code and WPILib commands use this behind the scenes so students do not have to run Gradle by hand.
+- `.code-workspace`: a VS Code workspace file that can open several related folders at once. Teams often use this when one robot project depends on several nearby repositories.
 - `build/`: generated output such as compiled code, jars, reports, and temporary files. Students normally do not edit anything here.
 - `vendordeps/`: vendor library description files. These are used when a project depends on hardware libraries from motor controller or sensor vendors.
 
@@ -42,11 +43,19 @@ In many Java projects, package names follow a reverse-domain naming pattern such
 
 A JAR file is one common kind of Java build output. `JAR` stands for `Java ARchive`. A JAR file is a packaged bundle that can hold compiled Java classes and other resources. Students usually do not edit a JAR by hand. It is something the build process creates from the source files.
 
+## Using Multiple Repositories Together
+
+Some teams keep subsystem libraries or utility libraries in separate repositories. A robot project can still use them if Gradle is told where they are. One common pattern is to add `includeBuild(...)` entries in `settings.gradle` so the robot project includes nearby library folders as local Gradle builds. The robot `build.gradle` can then depend on those libraries by name, such as `implementation 'frc.kauaibots.subsystems:wled'`.
+
+If the team works this way, there are really two setup jobs. First, Gradle has to know about the library folders so the build can use them. Second, VS Code has to open those folders too, often through a `.code-workspace` file, so students can navigate and edit the code across repositories. If the folders are not in the workspace, the build may know about them even though the editor view does not.
+
 ## What To Notice
 
 - Java code is organized into folders and packages so related files stay together.
 - Package names and folder paths usually line up with each other under `src/main/java/` or `src/test/java/`.
 - The `build/` folder often contains JAR files, which are packaged Java build outputs.
+- Some teams use a multi-folder VS Code workspace because one robot project may depend on several nearby repositories.
+- In that setup, Gradle files and the workspace file both matter.
 - `Main` starts the robot class.
 - `Robot` manages the robot's major modes such as disabled, autonomous, teleop, test, and simulation.
 - `RobotContainer` is where command-based robots usually define the overall setup of the project.
