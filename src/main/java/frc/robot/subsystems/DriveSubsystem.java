@@ -2,14 +2,17 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.io.DriveIO;
 
 public class DriveSubsystem extends SubsystemBase {
-  private double lastForwardCommand;
-  private double lastTurnCommand;
+  private final DriveIO io;
+
+  public DriveSubsystem(DriveIO io) {
+    this.io = io;
+  }
 
   public void drive(double forward, double turn) {
-    lastForwardCommand = forward;
-    lastTurnCommand = turn;
+    io.setOpenLoop(forward, turn);
   }
 
   public void stop() {
@@ -17,16 +20,27 @@ public class DriveSubsystem extends SubsystemBase {
   }
 
   public double getLastForwardCommand() {
-    return lastForwardCommand;
+    return io.getForwardCommand();
   }
 
   public double getLastTurnCommand() {
-    return lastTurnCommand;
+    return io.getTurnCommand();
+  }
+
+  public double getEstimatedXMeters() {
+    return io.getEstimatedXMeters();
+  }
+
+  public double getHeadingDegrees() {
+    return io.getHeadingDegrees();
   }
 
   @Override
   public void periodic() {
-    SmartDashboard.putNumber("Drive/ForwardCommand", lastForwardCommand);
-    SmartDashboard.putNumber("Drive/TurnCommand", lastTurnCommand);
+    io.update();
+    SmartDashboard.putNumber("Drive/ForwardCommand", io.getForwardCommand());
+    SmartDashboard.putNumber("Drive/TurnCommand", io.getTurnCommand());
+    SmartDashboard.putNumber("Drive/EstimatedXMeters", io.getEstimatedXMeters());
+    SmartDashboard.putNumber("Drive/HeadingDegrees", io.getHeadingDegrees());
   }
 }

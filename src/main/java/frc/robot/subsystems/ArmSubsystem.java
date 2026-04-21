@@ -2,21 +2,31 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import frc.robot.Constants;
+import frc.robot.io.ArmIO;
 
 public class ArmSubsystem extends SubsystemBase {
-  private double targetAngleDegrees = Constants.ArmConstants.STOW_ANGLE_DEGREES;
+  private final ArmIO io;
+
+  public ArmSubsystem(ArmIO io) {
+    this.io = io;
+  }
 
   public void moveToAngle(double targetAngleDegrees) {
-    this.targetAngleDegrees = targetAngleDegrees;
+    io.setTargetAngleDegrees(targetAngleDegrees);
   }
 
   public double getTargetAngleDegrees() {
-    return targetAngleDegrees;
+    return io.getTargetAngleDegrees();
+  }
+
+  public double getMeasuredAngleDegrees() {
+    return io.getMeasuredAngleDegrees();
   }
 
   @Override
   public void periodic() {
-    SmartDashboard.putNumber("Arm/TargetAngleDegrees", targetAngleDegrees);
+    io.update();
+    SmartDashboard.putNumber("Arm/TargetAngleDegrees", io.getTargetAngleDegrees());
+    SmartDashboard.putNumber("Arm/MeasuredAngleDegrees", io.getMeasuredAngleDegrees());
   }
 }
