@@ -31,6 +31,8 @@ These lessons explain the tools that keep the project organized and runnable.
 - `lesson-14-gradle-and-how-projects-run`: what the build system does when you build, test, or simulate the project.
 - `lesson-15-git-for-working-programmers`: how to move between branches and save your own work safely using Source Control and Git Graph.
 
+Lessons `00` through `15` are the Java-first block of the course. Students who already know Java can often move through that block faster, but lesson `16` is the intended common starting point for the FRC-specific framework lessons.
+
 ## Phase 3: WPILib and Command-Based Design
 
 These lessons move from plain Java into the structure that real FRC robot projects use. WPILib is the main software library used in FRC robot programs. Command-based is a common WPILib style built around subsystems and commands.
