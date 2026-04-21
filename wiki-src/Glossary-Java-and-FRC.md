@@ -1,25 +1,44 @@
 # Glossary: Java and FRC
 
+- Branch: a saved version of the project. In this course, each lesson uses its own branch.
+- Build: the process of checking the code and turning it into a runnable program.
+- Test: a small automatic check that asks whether the code behaves the way you expect.
+- Simulation: running robot code on a computer while the computer pretends to be the robot.
+- WPILib: the main software library used in FRC robot programs.
 - Primitive type: a built-in value type such as `int`, `double`, or `boolean`.
-- Reference type: a variable that points at an object, such as `String`, `List`, or a custom class.
+- Reference type: a variable that points to an object, such as `String`, `List`, or a custom class.
 - Wrapper type: an object form of a primitive, such as `Integer` or `Double`.
-- Object: a value created from a class, with state and behavior.
+- Class: a blueprint for making objects.
+- Object: one actual value made from a class, such as one `ShooterPreset` or one `DriveSubsystem`.
+- State: the data an object or program is currently holding, such as "arm angle is 30 degrees" or "intake has a game piece."
 - Constructor: the code that runs when a new object is created.
-- Method: a named block of behavior on a class or object.
-- Field: state stored on an object or class.
-- `static`: belongs to the class instead of one object instance.
-- `final`: cannot be reassigned after initialization.
-- Enum: a closed set of named states.
-- Generic type: a class or method parameterized by a type, such as `List<String>`.
-- Provider: code that supplies a value on demand, often through `Supplier<T>` or similar interfaces.
-- Mutable: an object whose internal state can change.
-- Immutable: an object whose state does not change after construction.
+- Method: a named block of code that does work.
+- Field: a variable stored inside an object or class.
+- Package: a way of grouping related Java classes.
+- Entry point: the place where a program starts running.
+- `static`: belongs to the class itself instead of one object instance.
+- `final`: cannot be reassigned after it has been set up.
+- Enum: a small fixed set of named choices or states.
+- Generic type: a class or method that works with a type supplied later, such as `List<String>`.
+- Provider: code that gives you the current value when you ask for it, often through `Supplier<T>` or a similar interface.
+- Mutable: able to change after the object is created.
+- Immutable: not able to change after the object is created.
+- Aliasing: two variables referring to the same mutable object, so a change through one name also changes what the other name sees.
 - Test double: a fake or stub used in place of real hardware or services during tests.
-- Subsystem: the owner of a robot mechanism or robot-facing capability.
+- Dependency: something one class needs in order to do its job.
+- Architecture: the overall shape of the program and how the pieces fit together.
+- Command-based: a common WPILib project style built around subsystems and commands.
+- Composition: building a class by having it use other classes.
+- Inheritance: building a class by extending another class.
+- Subsystem: the code that owns one robot capability, such as driving, moving an arm, or running an intake.
 - Command: an action that tells one or more subsystems what to do.
-- Trigger: a condition that schedules commands when it changes.
-- Requirement: the subsystem ownership a command declares to the scheduler.
-- Scheduler: the WPILib system that runs commands and resolves conflicts.
+- Binding: the connection between an input, such as a controller button, and a command.
+- Lifecycle: the repeating pattern of methods WPILib runs while the robot is on.
+- Trigger: a condition that starts or stops commands when it changes.
+- Requirement: a rule saying which subsystem a command needs to control.
+- Scheduler: the WPILib system that starts commands, runs them, and prevents conflicts.
+- Autonomous: the robot mode where the robot follows pre-planned actions without driver input.
+- Teleop: the robot mode where drivers control the robot.
+- Dashboard: the screen that shows robot data to humans.
+- Telemetry: data sent to the dashboard or log so humans can observe what the robot is doing.
 - Fake IO: a non-hardware implementation used to make robot code runnable on a laptop.
-- Simulation: a physics-based model of a mechanism or drivetrain.
-- Telemetry: data published so humans can observe what the robot is doing.

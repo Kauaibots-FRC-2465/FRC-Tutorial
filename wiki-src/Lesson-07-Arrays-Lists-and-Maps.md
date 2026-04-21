@@ -1,7 +1,18 @@
 # Lesson 07: Arrays, Lists, and Maps
 
 Branch: `lesson-07-arrays-lists-and-maps`
-Run mode: VS Code WPILib command palette with `Test Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
+
+## What This Lesson Is Really About
+
+Real programs need to store groups of values. This lesson teaches the most common collection shapes students will see in Java so long lines with brackets and angle brackets become readable.
+
+## New Words
+
+- array: a fixed-size ordered group of values
+- list: an ordered group of values that can usually grow or shrink
+- map: a structure that looks up a value by a key, often by name
+- collection: a general word for a class that stores many values
 
 ## Goals
 

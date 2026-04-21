@@ -1,7 +1,17 @@
 # Lesson 26: Integrated Tutorial Robot
 
 Branch: `lesson-26-integrated-tutorial-robot`
-Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+This final lesson is where students stop looking at isolated topics and start reading the whole project as one system. The goal is to leave the course able to explain the project, run it, and make one careful change without breaking everything else.
+
+## New Words
+
+- integration: making many project parts work together
+- pure logic: code that makes decisions without talking directly to hardware
+- safe modification: a change small enough that you can explain it and verify it
 
 ## Goals
 
@@ -23,4 +33,4 @@ Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Ro
 
 ## Success Check
 
-- You can describe the architecture, run the tests, and make one safe modification.
+- You can describe the project structure, run the tests, and make one safe modification.

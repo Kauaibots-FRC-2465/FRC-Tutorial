@@ -1,5 +1,7 @@
 # AI Prompting and Code Review Checklist
 
+In this course, code review means reading code carefully and asking whether it matches the design, whether it is understandable, and whether it is likely to behave correctly. AI can help you draft code, but it cannot replace understanding.
+
 ## Use AI For
 
 - generating a first draft
@@ -11,7 +13,7 @@
 
 - skipping code review
 - inventing hardware details you have not verified
-- replacing understanding with trust
+- accepting code just because it looks confident or compiles
 - generating large changes you cannot explain
 
 ## Strong Prompt Ingredients

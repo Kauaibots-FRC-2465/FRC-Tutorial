@@ -1,7 +1,17 @@
 # Lesson 08: Generics and Common Type Patterns
 
 Branch: `lesson-08-generics-and-common-type-patterns`
-Run mode: VS Code WPILib command palette with `Test Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
+
+## What This Lesson Is Really About
+
+Generics let Java describe a container shape once and then reuse it with different kinds of data. This lesson is here so students stop seeing angle brackets as visual noise and start reading what they mean.
+
+## New Words
+
+- generic type: a class or method that works with a type supplied later
+- type parameter: the placeholder name inside a generic type, such as `T`
+- container: a class whose job is to hold one or more values
 
 ## Goals
 

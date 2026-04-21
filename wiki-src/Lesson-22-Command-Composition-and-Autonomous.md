@@ -1,7 +1,18 @@
 # Lesson 22: Command Composition and Autonomous
 
 Branch: `lesson-22-command-composition-and-autonomous`
-Run mode: VS Code WPILib command palette with `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+Autonomous routines are not one giant block of code. They are usually built by combining smaller commands. This lesson teaches how those pieces are arranged and how the driver station can choose between routines.
+
+## New Words
+
+- autonomous: the robot mode where the robot follows pre-planned actions without driver input
+- sequence: commands that run one after another
+- parallel: commands that run at the same time
+- chooser: a dashboard tool that lets humans pick between options
 
 ## Goals
 

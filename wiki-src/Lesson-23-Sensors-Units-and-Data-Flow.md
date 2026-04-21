@@ -1,7 +1,18 @@
 # Lesson 23: Sensors, Units, and Data Flow
 
 Branch: `lesson-23-sensors-units-and-data-flow`
-Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+Measurements are only useful if you know what they mean and where they came from. This lesson follows one value from a sensor, through the program, and out to the dashboard while paying attention to units such as meters and degrees.
+
+## New Words
+
+- sensor: hardware that measures something about the robot or its environment
+- unit: the measurement label attached to a value, such as meters, degrees, or seconds
+- data flow: the path information takes through the program
+- conversion: changing a value from one unit or representation into another
 
 ## Goals
 

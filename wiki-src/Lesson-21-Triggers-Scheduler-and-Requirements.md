@@ -1,7 +1,18 @@
 # Lesson 21: Triggers, Scheduler, and Requirements
 
 Branch: `lesson-21-triggers-scheduler-and-requirements`
-Run mode: VS Code WPILib command palette with `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+In a command-based robot, button-like events start commands, and WPILib decides which commands are allowed to run together. This lesson explains those rules so command behavior feels predictable instead of mysterious.
+
+## New Words
+
+- trigger: a condition that starts or stops commands when it changes
+- scheduler: the WPILib system that starts commands, runs them, and prevents conflicts
+- requirement: a rule saying which subsystem a command needs to control
+- interrupt: stopping a running command because another command needs the same subsystem or the trigger changed
 
 ## Goals
 

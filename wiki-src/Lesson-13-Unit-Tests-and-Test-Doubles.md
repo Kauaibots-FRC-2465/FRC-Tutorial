@@ -1,7 +1,17 @@
 # Lesson 13: Unit Tests and Test Doubles
 
 Branch: `lesson-13-unit-tests-and-test-doubles`
-Run mode: VS Code WPILib command palette with `Test Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
+
+## What This Lesson Is Really About
+
+Tests are not just a way to catch bugs after the fact. They are also a clear way to describe expected behavior. This lesson shows how fake inputs let us test logic without needing a robot on the table.
+
+## New Words
+
+- unit test: a small automatic check of one behavior
+- test double: a fake replacement for something real
+- dependency: something one class needs in order to do its job
 
 ## Goals
 

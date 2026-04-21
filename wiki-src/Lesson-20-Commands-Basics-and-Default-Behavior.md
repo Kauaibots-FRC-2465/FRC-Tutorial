@@ -1,7 +1,17 @@
 # Lesson 20: Commands Basics and Default Behavior
 
 Branch: `lesson-20-commands-basics-and-default-behavior`
-Run mode: VS Code WPILib command palette with `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+Commands are how command-based projects ask subsystems to do work. This lesson focuses on the commands that run during normal operation, especially the default commands that keep behavior sensible when nothing special is happening.
+
+## New Words
+
+- default command: the command a subsystem runs when no other command is using it
+- deadband: a small input range treated as zero so tiny controller noise does not move the robot
+- idle behavior: what the robot should do when no active input is asking for something else
 
 ## Goals
 

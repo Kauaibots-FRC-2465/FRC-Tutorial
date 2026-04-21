@@ -1,7 +1,17 @@
 # Lesson 16: Reading a Command-Based Project
 
 Branch: `lesson-16-reading-a-command-based-project`
-Run mode: reading and VS Code WPILib command palette with `Build Robot Code`
+How to use this lesson: read the code, then use the VS Code WPILib command palette and choose `Build Robot Code`
+
+## What This Lesson Is Really About
+
+This is the point where students stop reading small Java examples and start reading a full robot project. The goal is not to memorize every file. The goal is to recognize the standard shape of a command-based WPILib robot.
+
+## New Words
+
+- command-based: a common WPILib project style built around subsystems and commands
+- architecture: the overall shape of the program and how its parts fit together
+- binding: the connection between an input and a command
 
 ## Goals
 
@@ -24,4 +34,4 @@ Run mode: reading and VS Code WPILib command palette with `Build Robot Code`
 
 ## Success Check
 
-- You can sketch the project structure on paper and explain each part.
+- You can sketch the project structure on paper and explain the job of each part.

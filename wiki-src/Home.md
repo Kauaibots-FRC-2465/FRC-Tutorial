@@ -2,32 +2,34 @@
 
 This wiki supports a branch-based course for learning how to read, test, and modify FRC robot code in Java.
 
+It is written for students who may be completely new to Java and new to robot code. Each lesson lives on its own Git branch. In this course, a branch is just a saved version of the project for one lesson. WPILib is the main software library used in FRC robot programs.
+
 ## How To Use The Course
 
-1. Clone the repository.
-2. Switch to the branch for the lesson you want.
+1. Clone the repository. Cloning means making your own copy of the project on your computer.
+2. Switch to the branch for the lesson you want. That branch is the saved version of the code for that lesson.
 3. Read the matching wiki page.
-4. Run the project with the workflow listed on that page.
-5. Make small changes and verify them before moving on.
+4. Run the project with the steps listed on that page.
+5. Make small changes and check the result before moving on.
 
 ## Course Structure
 
-- Tools and workflow first
-- Java reading foundations second
-- Gradle and Git basics before team workflow depends on them
-- WPILib and command-based architecture after students can already read Java
-- Fake IO and simulation before any real robot is required
-- AI-assisted design near the end, after students can review code critically
+- Tools and workflow come first, so students can actually open and run the lessons.
+- Java reading foundations come next, so the syntax is less mysterious.
+- Gradle and Git basics are taught before team work depends on them.
+- WPILib and command-based robot structure come after students can already read Java. Command-based is a common WPILib project style built around subsystems and commands.
+- Fake IO and simulation come before any real robot is required.
+- AI-assisted design comes near the end, after students can check code carefully and explain what it does.
 
 ## Core Commands
 
-- `git switch <branch-name>`
-- `git status`
-- `Ctrl+Shift+P`
-- `WPILib: Open WPILib Command Palette`
-- `Build Robot Code`
-- `Test Robot Code`
-- `Simulate Robot Code`
+- `git switch <branch-name>`: move to a different lesson snapshot.
+- `git status`: see whether you changed any files.
+- `Ctrl+Shift+P`: open the VS Code command palette.
+- `WPILib: Open WPILib Command Palette`: open the list of WPILib actions in VS Code.
+- `Build Robot Code`: check whether the code can be turned into a program successfully.
+- `Test Robot Code`: run small automatic checks called tests.
+- `Simulate Robot Code`: run the robot code on your computer without a real robot.
 
 ## Main Reference Pages
 

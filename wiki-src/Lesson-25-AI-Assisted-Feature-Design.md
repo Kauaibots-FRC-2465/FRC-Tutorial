@@ -1,7 +1,17 @@
 # Lesson 25: AI-Assisted Feature Design
 
 Branch: `lesson-25-ai-assisted-feature-design`
-Run mode: VS Code WPILib command palette with `Test Robot Code` and `Simulate Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code` and `Simulate Robot Code`
+
+## What This Lesson Is Really About
+
+AI can help draft code, but it is not allowed to replace understanding. This lesson shows students how to ask for a small feature, read the answer carefully, and judge whether the result fits the project they already understand.
+
+## New Words
+
+- prompt: the instructions you give to an AI system
+- code review: reading code carefully and checking whether it is correct, clear, and well designed
+- testability: how easy it is to verify behavior with tests or simulation
 
 ## Goals
 

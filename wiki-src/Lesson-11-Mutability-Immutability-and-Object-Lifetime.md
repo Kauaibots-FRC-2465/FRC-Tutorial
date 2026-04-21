@@ -1,7 +1,18 @@
 # Lesson 11: Mutability, Immutability, and Object Lifetime
 
 Branch: `lesson-11-mutability-immutability-and-object-lifetime`
-Run mode: VS Code WPILib command palette with `Test Robot Code`
+How to use this lesson: use the VS Code WPILib command palette and choose `Test Robot Code`
+
+## What This Lesson Is Really About
+
+Some bugs happen because data changes in more places than you expected. This lesson is about understanding which objects can change, which ones stay fixed, and why that difference matters when many parts of a robot program share data.
+
+## New Words
+
+- mutable: able to change after the object is created
+- immutable: not able to change after the object is created
+- aliasing: two variables pointing at the same mutable object
+- object lifetime: how long an object exists before it can be discarded
 
 ## Goals
 

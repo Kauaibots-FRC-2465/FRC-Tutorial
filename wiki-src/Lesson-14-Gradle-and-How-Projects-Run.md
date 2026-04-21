@@ -1,7 +1,17 @@
 # Lesson 14: Gradle and How Projects Run
 
 Branch: `lesson-14-gradle-and-how-projects-run`
-Run mode: VS Code and WPILib command palette
+How to use this lesson: use VS Code and the WPILib command palette
+
+## What This Lesson Is Really About
+
+Students do not need to become Gradle experts, but they do need a mental model of what the build system is doing. This lesson explains what changes when you build, test, or simulate the project.
+
+## New Words
+
+- Gradle: the build tool used by this project
+- build tool: software that compiles code, runs tests, and manages project setup
+- dependency: another library the project needs in order to work
 
 ## Goals
 
